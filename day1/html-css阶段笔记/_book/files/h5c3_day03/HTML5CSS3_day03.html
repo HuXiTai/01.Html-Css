@@ -1,0 +1,905 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <!-- Start book html&css阶段笔记 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>渐变、过渡 | html&amp;css阶段笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="杨聂">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-back-to-top-button/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-code/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-advanced-emoji/emoji-website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../files/h5c3_day04/HTML5CSS3_day04.html" />
+    
+    
+    <link rel="prev" href="../../files/h5c3_day02/HTML5CSS3_day02.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="4.3"
+        data-chapter-title="渐变、过渡"
+        data-filepath="files/h5c3_day03/HTML5CSS3_day03.md"
+        data-basepath="../.."
+        data-revision="Sat Sep 25 2021 00:14:58 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="files/关于学习.html">
+            
+                
+                    <a href="../../files/关于学习.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="files/title_link/index_html.html">
+            
+                
+                    <a href="../../files/title_link/index_html.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        html
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="files/html_day01/01.html">
+            
+                
+                    <a href="../../files/html_day01/01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        前端的概念
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="files/html_day01/02.html">
+            
+                
+                    <a href="../../files/html_day01/02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        html的发展史
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="files/html_day01/03.html">
+            
+                
+                    <a href="../../files/html_day01/03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        html常用标签
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="files/html_day02/html_day02.html">
+            
+                
+                    <a href="../../files/html_day02/html_day02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        表格、列表、表单
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="files/title_link/index_css.html">
+            
+                
+                    <a href="../../files/title_link/index_css.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        css
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="files/css_day01/css_day01.html">
+            
+                
+                    <a href="../../files/css_day01/css_day01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        css简介、基础选择器、css引入方式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="files/css_day02/css_day02.html">
+            
+                
+                    <a href="../../files/css_day02/css_day02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        复合选择器、显示模式、背景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="files/css_day03/css_day03.html">
+            
+                
+                    <a href="../../files/css_day03/css_day03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        css三大特性、盒子模型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="files/css_day04/css_day04.html">
+            
+                
+                    <a href="../../files/css_day04/css_day04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        浮动、css样式书写顺序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="files/css_day05/css_day05.html">
+            
+                
+                    <a href="../../files/css_day05/css_day05.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        定位、定位的应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="files/css_day06/css_day06.html">
+            
+                
+                    <a href="../../files/css_day06/css_day06.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        精灵图、字体图标、属性应用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="files/title_link/index_h5c3.html">
+            
+                
+                    <a href="../../files/title_link/index_h5c3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        h5c3
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="files/h5c3_day01/HTML5CSS3_day01.html">
+            
+                
+                    <a href="../../files/h5c3_day01/HTML5CSS3_day01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        H5新标签、C3新特性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="files/h5c3_day02/HTML5CSS3_day02.html">
+            
+                
+                    <a href="../../files/h5c3_day02/HTML5CSS3_day02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        css3样式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="files/h5c3_day03/HTML5CSS3_day03.html">
+            
+                
+                    <a href="../../files/h5c3_day03/HTML5CSS3_day03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        渐变、过渡
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="files/h5c3_day04/HTML5CSS3_day04.html">
+            
+                
+                    <a href="../../files/h5c3_day04/HTML5CSS3_day04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        变换、动画
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="files/title_link/layout.html">
+            
+                
+                    <a href="../../files/title_link/layout.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        布局
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="files/layout_day01/layout_day01.html">
+            
+                
+                    <a href="../../files/layout_day01/layout_day01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        布局方式、响应式布局
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="files/layout_day02/layout_day02.html">
+            
+                
+                    <a href="../../files/layout_day02/layout_day02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        flex布局、BFC
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >html&amp;css阶段笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="h5c3day03">H5C3-day03</h1>
+<blockquote>
+<p><strong>&#x8BFE;&#x7A0B;&#x76EE;&#x6807;&#xFF1A;</strong></p>
+<ul>
+<li>&#x719F;&#x6089;&#x6E10;&#x53D8;</li>
+<li>&#x719F;&#x6089;&#x8FC7;&#x6E21;&#x6548;&#x679C;    </li>
+</ul>
+</blockquote>
+<h2 id="&#x4E00;&#x3001;&#x6E10;&#x53D8;">&#x4E00;&#x3001;&#x6E10;&#x53D8;</h2>
+<p><strong>&#x6982;&#x5FF5;</strong></p>
+<p>&#x6E10;&#x53D8;&#x6307;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7684;&#x5E73;&#x6ED1;&#x8FC7;&#x6E21;&#xFF0C;&#x5B83;&#x662F;&#x56FE;&#x50CF;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x5728;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x56FE;&#x50CF;&#x7684;&#x5730;&#x65B9;&#x3002;&#x800C;&#x4E14;&#x6E10;&#x53D8;&#x6CA1;&#x6709;&#x56FA;&#x5B9A;&#x5C3A;&#x5BF8;&#x3002;&#xFF08;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x6211;&#x4EEC;&#x4F1A;&#x5C06;&#x6E10;&#x53D8;&#x7528;&#x5728;&#x80CC;&#x666F;&#x4E0A;&#xFF09;</p>
+<p><strong>&#x5206;&#x7C7B;</strong></p>
+<p>&#x6309;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x6E10;&#x53D8;&#x5206;&#x4E3A;&#x7EBF;&#x6027;&#x6E10;&#x53D8;&#x548C;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x3002;</p>
+<p>&#x6309;&#x5FAA;&#x73AF;&#x6B21;&#x6570;&#xFF0C;&#x6E10;&#x53D8;&#x5206;&#x4E3A;&#x5FAA;&#x73AF;&#x6E10;&#x53D8;&#x548C;&#x975E;&#x5FAA;&#x73AF;&#x6E10;&#x53D8;&#x3002;</p>
+<h3 id="11&#x7EBF;&#x6027;&#x6E10;&#x53D8;">1.1&#x7EBF;&#x6027;&#x6E10;&#x53D8;</h3>
+<p>&#x7EBF;&#x6027;&#x6E10;&#x53D8;&#xFF08;linear gradients&#xFF09;&#xFF0C;&#x7EBF;&#x6027;&#x6E10;&#x53D8;&#x6307;&#x6CBF;&#x7740;&#x4E00;&#x6761;&#x7EBF;&#x8FDB;&#x884C;&#x586B;&#x5145;&#x5F97;&#x5230;&#x7684;&#x6E10;&#x53D8;&#xFF0C;&#x8D2F;&#x7A7F;&#x6574;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;&#x7684;&#x8FD9;&#x6761;&#x7EBF;&#x79F0;&#x4E3A;&#x68AF;&#x5EA6;&#x7EBF;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="token property">background-image</span><span class="token punctuation">:</span><span class="token function">linear-gradient</span><span class="token punctuation">(</span>[&#x65B9;&#x5411;/&#x89D2;&#x5EA6;]<span class="token punctuation">,</span>color1<span class="token punctuation">,</span> color2...<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">/*&#x53EF;&#x4EE5;&#x4E0D;&#x5199;&#x65B9;&#x5411;/&#x89D2;&#x5EA6;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x4E0D;&#x5199;&#x989C;&#x8272;*/</span>
+</code></pre>
+<ol>
+<li><p>&#x7B80;&#x5355;&#x7684;&#x989C;&#x8272;&#x503C;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>CSS</code>&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x7684;&#x989C;&#x8272;&#x503C;&#xFF0C;&#x5305;&#x62EC;<code>rgba</code>&#x548C;<code>transparent</code>&#xFF0C;&#x989C;&#x8272;&#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x3002;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x989C;&#x8272;&#x5219;&#x5E73;&#x5747;&#x5206;&#x914D;&#x5728;&#x68AF;&#x5EA6;&#x7EBF;&#x4E0A;&#x3002;</p>
+<p><code>background-image: linear-gradient(yellow,red,green);</code></p>
+</li>
+<li><p>&#x89D2;&#x5EA6;&#x7684;&#x8BBE;&#x7F6E;</p>
+<p>&#x5047;&#x8BBE;&#x80CC;&#x666F;&#x56FE;&#x50CF;&#x662F;&#x77E9;&#x5F62;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x5916;&#x9762;&#x865A;&#x62DF;&#x4E00;&#x4E2A;&#x5706;&#x5F62;&#x51FA;&#x6765;&#xFF0C;&#x5706;&#x5F62;&#x5C31;&#x6709;&#x89D2;&#x5EA6;&#xFF08;&#x987A;&#x65F6;&#x9488;&#x4E3A;0 ~ 180deg&#xFF0C;&#x9006;&#x65F6;&#x9488;&#x4E3A;0 ~ -180deg&#xFF0C;&#x9ED8;&#x8BA4;180deg&#xFF09;&#xFF0C;&#x5047;&#x8BBE;&#x73B0;&#x5728;&#x662F;45deg&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;&#x4F1A;&#x5728;&#x5706;&#x5F62;45deg&#x7684;&#x5730;&#x65B9;&#x505A;&#x4E00;&#x6761;&#x7EBF;&#xFF0C;&#x8FD9;&#x6761;&#x7EBF;&#x53EB;&#x68AF;&#x5EA6;&#x7EBF;&#x3002;</p>
+</li>
+</ol>
+<p><img src="images/20210311134103775_6875.png" alt=""></p>
+<ol>
+<li><p>&#x68AF;&#x5EA6;&#x7EBF;&#x7684;&#x989C;&#x8272;&#x5206;&#x914D;</p>
+<p><img src="images/20210311134432105_6693.png" alt=""></p>
+<p>&#x68AF;&#x5EA6;&#x7EBF;&#x5728;&#x5206;&#x914D;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5728;&#x68AF;&#x5EA6;&#x7EBF;90&#x5EA6;&#x7684;&#x5730;&#x65B9;&#x5206;&#x6563;&#x51FA;&#x6765;&#x591A;&#x6761;&#x865A;&#x62DF;&#x7684;&#x7EBF;&#x6761;&#x8FD9;&#x4E9B;&#x7EBF;&#x6761;&#x65E0;&#x9650;&#x5EF6;&#x4F38;&#x3002;</p>
+</li>
+<li><p>&#x65B9;&#x5411;</p>
+<ul>
+<li><code>to bottom</code>&#xFF0C;&#x9ED8;&#x8BA4;&#xFF0C;&#x68AF;&#x5EA6;&#x7EBF;&#x65B9;&#x5411;&#x5411;&#x4E0B;&#x3002;</li>
+<li><code>to top</code>&#xFF0C;&#x68AF;&#x5EA6;&#x7EBF;&#x65B9;&#x5411;&#x5411;&#x4E0A;&#x3002;</li>
+<li><code>to left</code>&#xFF0C;&#x5411;&#x5DE6;</li>
+<li><code>to right</code>&#xFF0C;&#x5411;&#x53F3;</li>
+<li><code>to left top</code>&#xFF0C;&#x5DE6;&#x4E0A;&#x89D2;&#xFF08;&#x4E0D;&#x7B49;&#x4E8E;315deg&#xFF09;</li>
+<li><code>to left bottom</code>&#xFF0C;&#x5DE6;&#x4E0B;&#x89D2;</li>
+<li><code>to right top</code>&#xFF0C;&#x53F3;&#x4E0A;&#x89D2;</li>
+<li><code>to right bottom</code>&#xFF0C;&#x53F3;&#x4E0B;&#x89D2;</li>
+</ul>
+</li>
+</ol>
+<p><img src="images/20210311134455428_17299.png" alt=""></p>
+<ul>
+<li>&#x7ECF;&#x8FC7;&#x56FE;&#x50CF;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;&#xFF0C;&#x628A;&#x58F0;&#x660E;&#x7684;&#x89D2;&#x7684;&#x76F8;&#x90BB;&#x7684;&#x4E24;&#x4FA7;&#x7684;&#x89D2;&#x94FE;&#x63A5;&#x8D77;&#x6765;&#x3002;</li>
+<li><p>&#x68AF;&#x5EA6;&#x7EBF;&#x4E0E;&#x90A3;&#x6761;&#x76F8;&#x90BB;&#x89D2;&#x7684;&#x5BF9;&#x89D2;&#x7EBF;&#x5782;&#x76F4;&#xFF0C;&#x6307;&#x5411;&#x58F0;&#x660E;&#x7684;&#x89D2;</p>
+</li>
+<li><p>&#x989C;&#x8272;&#x503C;&#x9ED8;&#x8BA4;&#x503C;</p>
+<p>&#x9ED8;&#x8BA4;&#x7684;&#x65F6;&#x5019;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x989C;&#x8272;&#x5E73;&#x5747;&#x5206;&#x914D;&#x5728;&#x68AF;&#x5EA6;&#x7EBF;&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#x4E09;&#x79CD;&#x989C;&#x8272;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x4E3A;0%&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x5728;100%&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#xFF1A;</p>
+<p><img src="images/20210624114348.png" alt="2021-03-12_154201"></p>
+<p><code>background-image: linear-gradient(to right, yellow, red, green, blue);</code>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#x56DB;&#x79CD;&#x989C;&#x8272;&#xFF0C;&#x5219;&#xFF1A;</p>
+<p><img src="images/20210624114547.png" alt="2021-03-12_154408"></p>
+</li>
+<li><p>&#x6307;&#x5B9A;&#x989C;&#x8272;&#x503C;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x6307;&#x5B9A;<code>px</code>&#x6216;<code>%</code>&#x4F5C;&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x3002;&#x8BA9;&#x8FD9;&#x4E9B;&#x989C;&#x8272;&#x4E0D;&#x4F1A;&#x5E73;&#x5747;&#x5206;&#x914D;&#x5728;&#x68AF;&#x5EA6;&#x7EBF;&#x4E0A;&#x3002;</p>
+<pre><code class="lang-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>htmL</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+            <span class="token selector">div</span> <span class="token punctuation">{</span>
+                <span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+                <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+                <span class="token property">border</span><span class="token punctuation">:</span> 1px solid green<span class="token punctuation">;</span>
+                <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right<span class="token punctuation">,</span> yellow 0%<span class="token punctuation">,</span> red 10%<span class="token punctuation">,</span> green 30%<span class="token punctuation">,</span> blue 50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>htmL</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x7531;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#xFF0C;&#x5982;&#x679C;&#x6392;&#x5E03;&#x7684;&#x989C;&#x8272;&#x4E0D;&#x5230;&#x68AF;&#x5EA6;&#x7EBF;&#x7684;&#x672B;&#x7AEF;&#x5C31;&#x4F1A;&#x5C06;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x4E00;&#x76F4;&#x5EF6;&#x4F38;&#x4E0B;&#x53BB;&#x3002; </p>
+<p>&#x6848;&#x4F8B;&#xFF1A;</p>
+<p><img src="images/20210624120320.png" alt="2021-03-12_154408"></p>
+<p>&#x6848;&#x4F8B;&#xFF1A;</p>
+<p><img src="images/20210624120540.png" alt="2021-03-12_154408"></p>
+<pre><code class="lang-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>htmL</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+        <span class="token selector">div</span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span>400px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span>40px<span class="token punctuation">;</span>
+            <span class="token property">border</span><span class="token punctuation">:</span>1px solid green<span class="token punctuation">;</span>
+            <span class="token property">background-size</span><span class="token punctuation">:</span> 40px 40px<span class="token punctuation">;</span>
+            <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>-70deg<span class="token punctuation">,</span>yellow 0%<span class="token punctuation">,</span>yellow 25%<span class="token punctuation">,</span>black 25%<span class="token punctuation">,</span>black 75%<span class="token punctuation">,</span>yellow 75%<span class="token punctuation">,</span>yellow 100%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>htmL</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+<h3 id="12-&#x91CD;&#x590D;&#x7EBF;&#x6027;&#x6E10;&#x53D8;">1.2 &#x91CD;&#x590D;&#x7EBF;&#x6027;&#x6E10;&#x53D8;</h3>
+<p>&#x91CD;&#x590D;&#x6027;&#x7EBF;&#x6027;&#x6E10;&#x53D8;<code>repeating-linear-gradient</code>&#xFF0C;&#x91CD;&#x590D;&#x6027;&#x7EBF;&#x6027;&#x6E10;&#x53D8;&#x5728;&#x68AF;&#x5EA6;&#x7EBF;&#x4E0A;&#x4E0D;&#x65AD;&#x5FAA;&#x73AF;&#x6392;&#x5E03;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7684;&#x957F;&#x5EA6;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x56FE;&#x50CF;&#x7684;&#x6574;&#x4F53;&#x957F;&#x5EA6;&#xFF0C;&#x8D85;&#x8FC7;&#x8BE5;&#x957F;&#x5EA6;&#x4E4B;&#x540E;&#x5F00;&#x59CB;&#x5FAA;&#x73AF;&#x586B;&#x5145;&#x3002;</p>
+<p>&#x548C;linear-gradient&#x7684;&#x76F8;&#x540C;&#x70B9;&#xFF1A;</p>
+<p>&#x4ED6;&#x4EEC;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x90FD;&#x662F;&#x4EE5;&#x76D2;&#x5B50;&#x7684;&#x5BBD;/&#x9AD8;&#x4E3A;&#x6807;&#x51C6;&#xFF1B;&#x800C;&#x52A0;&#x4E86;background-size&#x5C5E;&#x6027;&#xFF0C;&#x5C31;&#x4EE5;&#x8BE5;&#x5C5E;&#x6027;&#x8BBE;&#x5B9A;&#x7684;&#x5BBD;&#x9AD8;&#x503C;&#x4E3A;&#x6807;&#x51C6;&#x3002;</p>
+<p>&#x4E0D;&#x540C;&#x70B9;&#xFF1A;</p>
+<p>repeating-linear-gradient(to right, yellow 0%, red 10%, green 30%, blue 50%);&#x4F1A;&#x5C06;50%&#x5904;&#x4F5C;&#x4E3A;&#x4E0B;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x586B;&#x5145;&#x7684;&#x5F00;&#x59CB;&#xFF1B;&#x800C;linear-gradient(to right, yellow 0%, red 10%, green 30%, blue 50%);&#x4F1A;&#x5C06;50%-100%&#x5168;&#x90E8;&#x586B;&#x5145;&#x4E3A;&#x84DD;&#x8272;&#x3002;</p>
+<p>&#x6848;&#x4F8B;&#xFF1A;</p>
+<p><img src="images/20210624120540.png" alt="2021-03-12_154408"></p>
+<pre><code class="lang-css"><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">repeating-linear-gradient</span><span class="token punctuation">(</span>-70deg<span class="token punctuation">,</span>yellow 0%<span class="token punctuation">,</span>yellow 2%<span class="token punctuation">,</span>black 2%<span class="token punctuation">,</span>black 8%<span class="token punctuation">,</span>yellow 8%<span class="token punctuation">,</span>yellow 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="13-&#x5F84;&#x5411;&#x6E10;&#x53D8;">1.3 &#x5F84;&#x5411;&#x6E10;&#x53D8;</h3>
+<p>&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x662F;&#x6CBF;&#x7740;&#x4E00;&#x4E2A;&#x4E2D;&#x5FC3;&#x70B9;&#x50CF;&#x56DB;&#x5468;&#x6269;&#x5C55;&#x989C;&#x8272;&#x8FDB;&#x884C;&#x5E73;&#x6ED1;&#x7684;&#x8FC7;&#x5EA6;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="token property">background-image</span><span class="token punctuation">:</span><span class="token function">radial-gradient</span><span class="token punctuation">(</span>[&#x5927;&#x5C0F;][at point] color1 color2.....<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<ol>
+<li><p>&#x7B80;&#x5355;&#x7684;&#x989C;&#x8272;&#x503C;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;CSS&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x989C;&#x8272;&#x503C;&#xFF0C;&#x5305;&#x62EC;rgba&#x548C;transparent&#xFF0C;&#x989C;&#x8272;&#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x9ED8;&#x8BA4;&#x5E73;&#x5747;&#x5206;&#x914D;&#x5728;&#x68AF;&#x5EA6;&#x7EBF;&#x4E0A;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x65F6;&#xFF0C;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x5728;&#x4E2D;&#x95F4;&#x663E;&#x793A;&#xFF0C;&#x5728;&#x6B63;&#x65B9;&#x5F62;&#x5143;&#x7D20;&#x4E2D;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x4E3A;&#x5706;&#x5F62;&#xFF0C;&#x5728;&#x957F;&#x65B9;&#x5F62;&#x5143;&#x7D20;&#x4E2D;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x4E3A;&#x692D;&#x5706;&#x5F62;&#x3002;</p>
+</li>
+<li><p>&#x68AF;&#x5EA6;&#x7EBF;&#xFF0C;&#x68AF;&#x5EA6;&#x7EBF;&#x4ECE;&#x6E10;&#x53D8;&#x7684;&#x4E2D;&#x5FC3;&#x5411;&#x53F3;&#x5EF6;&#x4F38;&#xFF0C;&#x6E10;&#x53D8;&#x7684;&#x5176;&#x4ED6;&#x7684;&#x90E8;&#x5206;&#x6839;&#x636E;&#x8FD9;&#x6839;&#x7EBF;&#x6765;&#x6784;&#x5EFA;&#x3002;</p>
+</li>
+</ol>
+<p><img src="images/20210311140320271_17549.png" alt="20210311140320271_17549" style="zoom:80%;"></p>
+<ol>
+<li><p>&#x9ED8;&#x8BA4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x989C;&#x8272;&#x5219;&#x5E73;&#x5747;&#x5206;&#x914D;&#x5728;&#x68AF;&#x5EA6;&#x7EBF;&#x4E0A;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x7ED9;&#x989C;&#x8272;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x6539;&#x53D8;&#x5206;&#x914D;&#x65B9;&#x5F0F;&#xFF0C;&#x8BBE;&#x5B9A;&#x7684;&#x8FD9;&#x4E2A;&#x5C31;&#x662F;&#x68AF;&#x5EA6;&#x7EBF;&#x4E0A;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-css"><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span>yellow<span class="token punctuation">,</span>red 20px <span class="token punctuation">,</span>green<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*&#x8868;&#x793A;&#x5728;&#x79BB;&#x5706;&#x5FC3;20px&#x7684;&#x5730;&#x65B9;&#x52A0;&#x5165;&#x7EA2;&#x8272;&#x3002;*/</span>
+
+<span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span>red 30%<span class="token punctuation">,</span> green 70%<span class="token punctuation">,</span> blue 100%<span class="token punctuation">)</span>&#xFF1B;<span class="token comment">/*&#x8868;&#x793A;&#x5728;&#x4EE5;&#x76D2;&#x5B50;&#x5BF9;&#x89D2;&#x7EBF;&#x4E3A;&#x76F4;&#x5F84;&#x7684;&#x5706;&#x5185;&#xFF0C;&#x79BB;&#x5706;&#x5FC3;&#x8DDD;&#x79BB;30%&#x7684;&#x5730;&#x65B9;&#x4E3A;&#x7EA2;&#x8272;&#xFF0C;&#x79BB;&#x5706;&#x5FC3;70%&#x7684;&#x5730;&#x65B9;&#x6E10;&#x53D8;&#x4E3A;&#x7EFF;&#x8272;&#xFF0C;&#x79BB;&#x5706;&#x5FC3;100%&#x7684;&#x5730;&#x65B9;&#x6E10;&#x53D8;&#x4E3A;&#x84DD;&#x8272;*/</span>
+</code></pre>
+</li>
+<li><p>&#x5927;&#x5C0F;&#xFF0C;&#x5728;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x4E2D;&#xFF0C;&#x5F84;&#x5411;&#x5C3A;&#x5BF8;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6E10;&#x53D8;&#x56FE;&#x50CF;&#x7684;&#x5927;&#x5C0F;&#x3002;</p>
+<p>&#x6709;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;1&#x3001;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x503C;&#xFF1B;2&#x3001;&#x8BBE;&#x7F6E;&#x4E24;&#x4E2A;&#x503C;&#xFF1B;3&#x3001;&#x8BBE;&#x7F6E;&#x4E24;&#x4E2A;&#x503C;&#x540C;&#x65F6;&#x6307;&#x5B9A;&#x5706;&#x5FC3;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x503C;&#xFF1A;&#x5F97;&#x5230;&#x7684;&#x662F;&#x5706;&#x5F62;&#x6E10;&#x53D8;&#xFF0C;&#x503C;&#x4E3A;&#x534A;&#x5F84;&#x3002;</p>
+<pre><code class="lang-css"><span class="token property">background-image</span><span class="token punctuation">:</span><span class="token function">radial-gradient</span><span class="token punctuation">(</span>20px<span class="token punctuation">,</span>yellow<span class="token punctuation">,</span>green<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x7531;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x5C06;&#x4ECE;&#x68AF;&#x5EA6;&#x7EBF;&#x7684;&#x7EC8;&#x70B9;&#x4E00;&#x76F4;&#x5411;&#x5916;&#x5EF6;&#x4F38;&#x3002;</p>
+<p><img src="images/20210624151422.png"></p>
+</li>
+</ol>
+<p>   &#x4E24;&#x4E2A;&#x503C;&#xFF1A;&#x5F97;&#x5230;&#x7684;&#x662F;&#x692D;&#x5706;&#x5F62;&#x6E10;&#x53D8;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x503C;&#x4E3A;&#x692D;&#x5706;&#x7684;&#x5BBD;&#x5EA6;&#x7684;&#x4E00;&#x534A;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x503C;&#x4E3A;&#x692D;&#x5706;&#x7684;&#x9AD8;&#x5EA6;&#x7684;&#x4E00;&#x534A;&#x3002;</p>
+<pre><code class="lang-css">   <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span>150px 100px<span class="token punctuation">,</span> yellow<span class="token punctuation">,</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>   <img src="images/20210624152041.png"></p>
+<p>   &#x4E24;&#x4E2A;&#x503C;&#x52A0;&#x6307;&#x5B9A;&#x5706;&#x5FC3;&#xFF1A;<code>at point</code>&#x9ED8;&#x8BA4;&#x65F6;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x7684;&#x4E2D;&#x5FC3;&#x5728;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>at point</code>&#x6765;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x3002;at point&#x540E;&#x9762;&#x7684;&#x503C;&#x5C31;&#x662F;&#x8868;&#x793A;&#x53D1;&#x751F;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x7684;&#x5706;&#x7684;&#x5706;&#x5FC3;&#x5728;&#x5927;&#x76D2;&#x5B50;&#x91CC;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-css">   <span class="token property">background-image</span><span class="token punctuation">:</span><span class="token function">radial-gradient</span><span class="token punctuation">(</span>50px at 30% 30%<span class="token punctuation">,</span>yellow <span class="token punctuation">,</span>green<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="images/20210624153330.png"></p>
+<p>&#x200B;        &#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x6E10;&#x53D8;&#xFF0C;&#x591A;&#x4E2A;&#x6E10;&#x53D8;&#x4E4B;&#x95F4;&#x7528;&#x9017;&#x53F7;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;&#x591A;&#x4E2A;&#x6E10;&#x53D8;&#x4E4B;&#x95F4;&#x6709;&#x5C42;&#x53E0;&#x7684;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#xFF0C;&#x90A3;&#x4E48;&#x5148;&#x5199;&#x7684;&#x5728;&#x4E0A;&#x9762;&#x3002;</p>
+<p>&#x6848;&#x4F8B;1&#xFF1A;</p>
+<p><img src="images/20210624195449.png"></p>
+<p>&#x6848;&#x4F8B;2&#xFF1A;</p>
+<p><img src="images/20210624204444.png"></p>
+<h3 id="14-&#x91CD;&#x590D;&#x5F84;&#x5411;&#x6E10;&#x53D8;">1.4 &#x91CD;&#x590D;&#x5F84;&#x5411;&#x6E10;&#x53D8;</h3>
+<p>&#x683C;&#x5F0F;&#xFF1A;<code>repeating-radial-gradient</code></p>
+<p>&#x5B9A;&#x4E49;&#x597D;&#x5706;&#x5F62;&#x6216;&#x692D;&#x5706;&#x5F62;&#x5C3A;&#x5BF8;&#x4E4B;&#x540E;&#x518D;&#x4F7F;&#x7528;&#x957F;&#x5EA6;&#x5B9A;&#x4E49;&#x989C;&#x8272;&#x5728;&#x68AF;&#x5EA6;&#x7EBF;&#x4E0A;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8D85;&#x8FC7;&#x68AF;&#x5EA6;&#x7EBF;&#x7684;&#x672B;&#x7AEF;&#x4E4B;&#x540E;&#xFF0C;&#x4FBF;&#x80FD;&#x770B;&#x5230;&#x5FAA;&#x73AF;&#x6E10;&#x53D8;&#x3002;</p>
+<pre><code class="lang-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+        <span class="token selector">div</span><span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span>200px<span class="token punctuation">;</span>         
+            <span class="token property">background-image</span><span class="token punctuation">:</span><span class="token function">repeating-radial-gradient</span><span class="token punctuation">(</span>yellow<span class="token punctuation">,</span>blue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>f<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0D;&#x4F1A;&#x5FAA;&#x73AF;&#x6E10;&#x53D8;&#xFF0C;&#x56E0;&#x4E3A;&#x4F7F;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;<strong>&#x5FC5;&#x987B;&#x9650;&#x5236;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x7684;&#x5C3A;&#x5BF8;</strong>&#x3002;&#x624D;&#x4F1A;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x7ED3;&#x675F;&#x540E;&#x5F00;&#x59CB;&#x91CD;&#x590D;&#x3002;</p>
+<pre><code class="lang-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+        <span class="token selector">div</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+            <span class="token comment">/*&#x52A0;&#x4E0A;&#x5F84;&#x5411;&#x6E10;&#x53D8;&#x7684;&#x5927;&#x5C0F;*/</span>
+            <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">repeating-radial-gradient</span><span class="token punctuation">(</span>50px<span class="token punctuation">,</span> yellow<span class="token punctuation">,</span> blue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>f<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="&#x4E8C;&#x3001;&#x8FC7;&#x6E21;">&#x4E8C;&#x3001;&#x8FC7;&#x6E21;</h2>
+<p>&#x8FC7;&#x6E21;&#xFF08;transition)&#x662F;CSS3&#x4E2D;&#x5177;&#x6709;&#x98A0;&#x8986;&#x6027;&#x7684;&#x7279;&#x5F81;&#x4E4B;&#x4E00;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x4F7F;&#x7528; Flash &#x52A8;&#x753B;&#x6216; JavaScript &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F53;&#x5143;&#x7D20;&#x4ECE;&#x4E00;&#x79CD;&#x6837;&#x5F0F;&#x53D8;&#x6362;&#x4E3A;&#x53E6;&#x4E00;&#x79CD;&#x6837;&#x5F0F;&#x65F6;&#x4E3A;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x6548;&#x679C;&#x3002;</p>
+<p><strong>&#x8FC7;&#x6E21;&#x52A8;&#x753B;&#xFF1A;</strong> &#x662F;&#x4ECE;&#x4E00;&#x4E2A;&#x72B6;&#x6001; &#x6E10;&#x6E10;&#x7684;&#x8FC7;&#x6E21;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x72B6;&#x6001;</p>
+<p>&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x9875;&#x9762;&#x66F4;&#x597D;&#x770B;&#xFF0C;&#x66F4;&#x52A8;&#x611F;&#x5341;&#x8DB3;&#xFF0C;&#x867D;&#x7136; &#x4F4E;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301;&#xFF08;ie9&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#xFF09; &#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x9875;&#x9762;&#x5E03;&#x5C40;&#x3002;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x7ECF;&#x5E38;&#x548C; :hover &#x4E00;&#x8D77;&#x642D;&#x914D;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ol>
+<li>&#x6307;&#x5B9A;&#x8981;&#x6DFB;&#x52A0;&#x6548;&#x679C;&#x7684;CSS&#x5C5E;&#x6027;&#x3002;</li>
+<li>&#x6307;&#x5B9A;&#x6548;&#x679C;&#x7684;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x3002;</li>
+</ol>
+<h4 id="&#x5B9A;&#x4E49;&#x8FC7;&#x6E21;&#x7684;&#x5C5E;&#x6027;">&#x5B9A;&#x4E49;&#x8FC7;&#x6E21;&#x7684;&#x5C5E;&#x6027;</h4>
+<p>&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-css"> <span class="token property">transition-property</span><span class="token punctuation">:</span>value<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x53EA;&#x6709;&#x5728;&#x8BE5;&#x5C5E;&#x6027;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;&#xFF08;&#x6BD4;&#x5982;&#x5BBD;&#x3001;&#x9AD8;&#x3001;&#x989C;&#x8272;&#x7B49;&#xFF09;&#x624D;&#x4F1A;&#x4EE5;&#x52A8;&#x753B;&#x7684;&#x5F62;&#x5F0F;&#x6301;&#x7EED;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x800C;&#x4E0D;&#x662F;&#x77AC;&#x95F4;&#x53D8;&#x5316;&#x3002;</p>
+<ul>
+<li><p>none&#xFF0C;&#x4E0D;&#x8FC7;&#x6E21;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#x3002;</p>
+</li>
+<li><p>all&#xFF0C;&#x8FC7;&#x6E21;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x5C5E;&#x6027;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x6570;&#x5B57;&#x503C;&#x7684;&#x4E00;&#x822C;&#x90FD;&#x652F;&#x6301;&#x8FC7;&#x6E21;&#xFF0C;&#x4E0D;&#x80FD;&#x8F6C;&#x6362;&#x4E3A;&#x6570;&#x503C;&#x7684;&#x5173;&#x952E;&#x5B57;&#x4E0D;&#x652F;&#x6301;&#x8FC7;&#x6E21;&#x3002;</p>
+</li>
+<li><p>&#x5176;&#x4ED6;&#x503C;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x5C5E;&#x6027;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+</li>
+</ul>
+<h4 id="&#x8BBE;&#x7F6E;&#x8FC7;&#x6E21;&#x7684;&#x6301;&#x7EED;&#x65F6;&#x95F4;">&#x8BBE;&#x7F6E;&#x8FC7;&#x6E21;&#x7684;&#x6301;&#x7EED;&#x65F6;&#x95F4;</h4>
+<p>&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="token property">transition-duration</span><span class="token punctuation">:</span>value<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x8FC7;&#x6E21;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x8981;&#x7ECF;&#x8FC7;&#x591A;&#x4E45;&#x3002;</p>
+<ul>
+<li>&#x9ED8;&#x8BA4;&#x503C;&#x662F;0&#xFF0C;&#x5373;&#x6CA1;&#x6709;&#x8FC7;&#x6E21;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x503C;&#x53EF;&#x4EE5;&#x662F;s&#x6216;ms&#xFF0C;&#x53EA;&#x80FD;&#x662F;&#x6B63;&#x6570;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x8F83;&#x597D;&#x7684;&#x4F53;&#x9A8C;&#x503C;&#x662F;<code>100~200ms</code>&#x3002;</li>
+<li>&#x503C;&#x53EF;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x65F6;&#x95F4;&#x957F;&#x5EA6;&#x5217;&#x8868;&#x3002;<ul>
+<li>&#x5982;&#x679C;&#x60F3;&#x8BA9;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x90FD;&#x6301;&#x7EED;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x90A3;&#x5C31;&#x5199;&#x4E00;&#x4E2A;&#x503C;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x60F3;&#x8BA9;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x6301;&#x7EED;&#x4E0D;&#x540C;&#x7684;&#x65F6;&#x95F4;&#x90A3;&#x5C31;&#x5199;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x8C03;&#x6574;&#x8FC7;&#x6E21;&#x7684;&#x65B9;&#x5F0F;">&#x8C03;&#x6574;&#x8FC7;&#x6E21;&#x7684;&#x65B9;&#x5F0F;</h4>
+<p>&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FDB;&#x884C;&#x8FC7;&#x6E21;&#x7684;&#x6837;&#x5F0F;&#x662F;&#x6162;&#x901F;&#x5F00;&#x59CB;&#xFF0C;&#x7136;&#x540E;&#x52A0;&#x901F;&#x7136;&#x540E;&#x518D;&#x6162;&#x4E0B;&#x6765;&#x3002;&#x5982;&#x679C;&#x8981;&#x8C03;&#x6574;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="token property">transition-timing-function</span><span class="token punctuation">:</span>value<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="images/&#x8FD0;&#x52A8;&#x66F2;&#x7EBF;.png" style="zoom:80%;"></p>
+<p>&#x503C;&#xFF1A; </p>
+<ul>
+<li><p>ease&#xFF1A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6162;&#x901F;&#x5F00;&#x59CB;&#xFF0C;&#x7136;&#x540E;&#x52A0;&#x901F;&#xFF0C;&#x518D;&#x51CF;&#x901F;&#x3002;</p>
+</li>
+<li><p>linear&#xFF1A;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x5300;&#x901F;&#x3002;</p>
+</li>
+<li><p>ease-in&#xFF1A;&#x9010;&#x6E10;&#x52A0;&#x901F;&#x3002;</p>
+</li>
+<li><p>ease-out&#xFF1A;&#x9010;&#x6E10;&#x51CF;&#x901F;&#x3002;</p>
+</li>
+<li><p><code>cubic-bezier()</code>&#xFF0C;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x4E09;&#x6B21;&#x65B9;&#x7684;<a href="https://cubic-bezier.com" target="_blank">&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;</a>&#x3002;&#x5730;&#x5740;&#x4E3A;&#xFF1A;<code>https://cubic-bezier.com</code></p>
+</li>
+</ul>
+<h4 id="&#x5EF6;&#x8FDF;&#x8FC7;&#x6E21;">&#x5EF6;&#x8FDF;&#x8FC7;&#x6E21;</h4>
+<p><code>transition-delay</code>&#x5C5E;&#x6027;&#x6307;&#x7684;&#x662F;&#x5F00;&#x59CB;&#x8FC7;&#x6E21;&#x7684;&#x5EF6;&#x8FDF;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="token property">transition-delay</span><span class="token punctuation">:</span>value<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x503C;&#xFF1A;&#x548C;transition-duration&#x7684;&#x89C4;&#x5219;&#x76F8;&#x540C;&#x3002;</p>
+<h4 id="&#x7B80;&#x5199;&#x683C;&#x5F0F;">&#x7B80;&#x5199;&#x683C;&#x5F0F;</h4>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="token property">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x52A8;&#x753B;&#xFF0C;&#x683C;&#x5F0F;</span><span class="token punctuation">:</span> <span class="token property">transition</span><span class="token punctuation">:</span>property duration timing-function delay
+                 <span class="token property">transition</span><span class="token punctuation">:</span> &#x8981;&#x8FC7;&#x6E21;&#x7684;&#x5C5E;&#x6027;  &#x82B1;&#x8D39;&#x65F6;&#x95F4;  &#x8FD0;&#x52A8;&#x66F2;&#x7EBF;  &#x4F55;&#x65F6;&#x5F00;&#x59CB;<span class="token punctuation">;</span>
+
+<span class="token property">&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x52A8;&#x753B;&#xFF0C;&#x683C;&#x5F0F;</span><span class="token punctuation">:</span> <span class="token property">transition</span><span class="token punctuation">:</span>property1 duration1 timing-funtion1 delay1<span class="token punctuation">,</span>
+                property2 duration2 timing-function2 delay2.....
+</code></pre>
+<ul>
+<li>&#x5C5E;&#x6027; &#xFF1A; &#x60F3;&#x8981;&#x53D8;&#x5316;&#x7684; css &#x5C5E;&#x6027;&#xFF0C; &#x5BBD;&#x5EA6;&#x9AD8;&#x5EA6; &#x80CC;&#x666F;&#x989C;&#x8272; &#x5185;&#x5916;&#x8FB9;&#x8DDD;&#x90FD;&#x53EF;&#x4EE5; &#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x90FD;&#x53D8;&#x5316;&#x8FC7;&#x6E21;&#xFF0C; &#x5199;&#x4E00;&#x4E2A;all &#x5C31;&#x53EF;&#x4EE5;</li>
+<li>&#x82B1;&#x8D39;&#x65F6;&#x95F4;&#xFF1A; &#x5355;&#x4F4D;&#x662F; &#x79D2;&#xFF08;&#x5FC5;&#x987B;&#x5199;&#x5355;&#x4F4D;&#xFF09; &#x6BD4;&#x5982; 0.5s </li>
+<li>&#x8FD0;&#x52A8;&#x66F2;&#x7EBF;&#xFF1A; &#x9ED8;&#x8BA4;&#x662F; ease &#xFF08;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#xFF09;</li>
+<li>&#x4F55;&#x65F6;&#x5F00;&#x59CB;&#xFF1A;&#x5355;&#x4F4D;&#x662F; &#x79D2;&#xFF08;&#x5FC5;&#x987B;&#x5199;&#x5355;&#x4F4D;&#xFF09;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5EF6;&#x8FDF;&#x89E6;&#x53D1;&#x65F6;&#x95F4;  &#x9ED8;&#x8BA4;&#x662F; 0s  &#xFF08;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#xFF09;</li>
+<li><strong>&#x540E;&#x9762;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x7701;&#x7565;</strong></li>
+<li><strong>&#x8BB0;&#x4F4F;&#x8FC7;&#x6E21;&#x7684;&#x4F7F;&#x7528;&#x53E3;&#x8BC0;&#xFF1A; &#x8C01;&#x505A;&#x8FC7;&#x6E21;&#x7ED9;&#x8C01;&#x52A0;</strong></li>
+</ul>
+<h4 id="&#x53CD;&#x5411;&#x8FC7;&#x6E21;">&#x53CD;&#x5411;&#x8FC7;&#x6E21;</h4>
+<p>&#x200B;        &#x521A;&#x624D;&#x53EA;&#x5728;div:hover&#x4E0A;&#x9762;&#x58F0;&#x660E;&#x4E86;&#x8FC7;&#x6E21;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x5728;&#x9F20;&#x6807;&#x79FB;&#x5165;&#x65F6;&#x624D;&#x4F1A;&#x89E6;&#x53D1;&#x8FC7;&#x6E21;&#xFF0C;&#x79FB;&#x51FA;&#x65F6;&#x77AC;&#x95F4;&#x53D8;&#x4E3A;&#x539F;&#x6765;&#x7684;&#x72B6;&#x6001;&#x3002;&#x8981;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;&#x8FC7;&#x6E21;&#x5E94;&#x7528;&#x5728;&#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x7531;hover&#x89E6;&#x53D1;&#x3002;</p>
+<pre><code class="lang-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+        <span class="token selector">div</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> 1px solid green<span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+            <span class="token property">transition</span><span class="token punctuation">:</span> width 3s linear 100ms<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">div:hover</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+            <span class="token comment">/*  height:100px; */</span>
+
+            <span class="token comment">/* transition-property:width,height;
+            transition-duration: 1s,2s; */</span>
+
+            <span class="token comment">/* transition-property: width;
+            transition-duration: 3s; */</span>
+            <span class="token comment">/* transition-timing-function: cubic-bezier(.97,-0.63,0,1.49); */</span>
+            <span class="token comment">/* transition-timing-function: linear;
+            transition-delay: 1s; */</span>
+        <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>f<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h5 id="&#x6848;&#x4F8B;1&#xFF1A;">&#x6848;&#x4F8B;1&#xFF1A;</h5>
+<p><img src="images/border.gif" alt=""></p>
+<p>&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x4E24;&#x4E2A;div&#x7684;&#x76D2;&#x5B50;&#xFF0C;&#x5C5E;&#x4E8E;&#x7684;&#x5D4C;&#x5957;&#x5173;&#x7CFB;&#xFF0C;&#x5916;&#x5C42;&#x7C7B;&#x540D;&#x53EB; bar&#xFF0C;&#x91CC;&#x5C42;&#x7C7B;&#x540D;&#x53EB; bar_in</li>
+<li>&#x7ED9;&#x5916;&#x5C42;&#x7684;bar &#x8FD9;&#x4E2A;&#x76D2;&#x5B50;&#x8BBE;&#x7F6E;&#x8FB9;&#x6846;&#xFF0C;&#x5BBD;&#x9AD8;&#xFF0C;&#x5706;&#x89D2;&#x8FB9;&#x6846;</li>
+<li>&#x7ED9;&#x91CC;&#x5C42;&#x7684;bar_in  &#x8BBE;&#x7F6E; &#x521D;&#x8BD5;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x80CC;&#x666F;&#x989C;&#x8272;&#xFF0C;&#x8FC7;&#x6E21;&#x6548;&#x679C;</li>
+<li>&#x7ED9;&#x5916;&#x5C42;&#x7684; bar &#x6DFB;&#x52A0; hover&#x4E8B;&#x4EF6;&#xFF0C;&#x5F53;&#x89E6;&#x53D1;&#x4E86;hover&#x4E8B;&#x4EF6; &#x8BA9;&#x91CC;&#x5C42;&#x7684;bar_in &#x6765;&#x8FDB;&#x884C;&#x5BBD;&#x5EA6;&#x7684;&#x53D8;&#x5316;</li>
+</ul>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/css<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+            <span class="token selector">.bar</span> <span class="token punctuation">{</span>
+                <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+                <span class="token property">height</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+                <span class="token property">border</span><span class="token punctuation">:</span> 1px solid red<span class="token punctuation">;</span>
+                <span class="token property">border-radius</span><span class="token punctuation">:</span> 6px<span class="token punctuation">;</span>
+                <span class="token property">margin</span><span class="token punctuation">:</span> 20px auto<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token selector">.bar:hover .bar_in</span> <span class="token punctuation">{</span>
+                <span class="token property">width</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token selector">.bar_in</span> <span class="token punctuation">{</span>
+                <span class="token property">width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+                <span class="token property">height</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+                <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+                <span class="token comment">/* &#x8C01;&#x505A;&#x8FC7;&#x6E21;&#x7ED9;&#x8C01;&#x52A0; */</span>
+                <span class="token property">transition</span><span class="token punctuation">:</span> width 3s<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bar_in<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h5 id="&#x6848;&#x4F8B;2&#xFF1A;">&#x6848;&#x4F8B;2&#xFF1A;</h5>
+<p><img src="images/xuanmeinv.gif" alt=""></p>
+<h5 id="&#x6848;&#x4F8B;3&#xFF1A;">&#x6848;&#x4F8B;3&#xFF1A;</h5>
+<p><img src="images/menu.gif" alt=""></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../files/h5c3_day02/HTML5CSS3_day02.html" class="navigation navigation-prev " aria-label="Previous page: css3样式"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../files/h5c3_day04/HTML5CSS3_day04.html" class="navigation navigation-next " aria-label="Next page: 变换、动画"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-hide-element/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-back-to-top-button/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-code/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"hide-element":{"elements":[".gitbook-link"]},"theme-default":{"showLevel":true},"fontsettings":{"family":"sans","size":2,"theme":"white"},"toggle-chapters":{},"back-to-top-button":{},"code":{"copyButtons":true},"advanced-emoji":{"embedEmojis":false},"splitter":{},"emphasize":{},"prism":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book html&css阶段笔记 -->
+</html>
