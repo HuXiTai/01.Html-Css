@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 删除一行代码快捷键：ctrl+shift+K -->
+		<!-- img标签是不换行标签 -->
+		
+		<!-- 相对路径：图片的位置是相对于当前html文件的位置去查找的，改变了html文件的位置，图片就看不到了 -->
+		
+		<!-- 当前路径 ./ -->
+		<!-- <img src="nz.jpg" alt="娜扎思密达" title="娜扎" width="300"> -->
+		<!-- <img src="./nz1.jpg" alt="娜扎思密达" title="娜扎" width="300"> -->
+		
+		<!-- 下一级路径，图片在和html文件并列的文件夹下,文件夹名/图片文件名 -->
+		<!--<img src="./images/nz.jpg" alt="娜扎思密达" title="娜扎" width="300"> -->
+		<!-- <img src="./images/photo/nz.jpg" alt="娜扎思密达" title="娜扎" width="300"> -->
+		
+		<!-- 上一级路径  ../ -->
+		<!-- <img src="../nz1.jpg" alt="娜扎思密达" title="娜扎" width="300"> -->
+		<!-- <img src="../../nz1.jpg" alt="娜扎思密达" title="娜扎" width="300"> -->
+		
+		
+		<!-- 
+			绝对路径:图片不是根据html的位置去查找的，而是从计算机操作系统根目录开始去查找图片，
+			html文件位置改变，不影响网页的显示。
+			在windows系统的操作系统下，路径是从盘符开始C: D: E:...,在linux操作系统下，从/开始
+		-->
+		<!-- <img src="C:\Users\yangn\Desktop\课程信息共享\day02\nz1.jpg" alt="娜扎思密达" title="娜扎" width="300"> -->
+		<!-- 图片是网络地址 -->
+		<img src="https://img1.baidu.com/it/u=1560258362,814356627&fm=26&fmt=auto" alt="">
+	</body>
+</html>
