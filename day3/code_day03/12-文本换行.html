@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				盒子里的文字(中文、英文等)默认是遇到右边界换行的，
+				如果不希望它换行，我们可以设置white-space: nowrap;
+				
+				但是纯字母不受上面属性的影响，这种情况由word-break来决定是否换行。
+				word-break:break-all表示强制换行，会将一个单词的字母分开。
+			 */
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+				/* white-space: nowrap; */
+				
+				/* word-break: break-all; */
+			}
+		</style>
+	</head>
+	<body>
+		<div>奔驰新款SUV终于亲民！从31.48万跌至23万</div> <br />
+		<div>we are the children</div> <br />
+		<div>wearethechildren</div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				内嵌式,一般写在head标签里
+				缺点：
+				1、只能用于当前页面，其他页面用不了
+				2、当样式写得较多时，还是不能和标签彻底分开
+			 */
+			div {
+				color: red;
+			}
+		</style>
+
+		<!-- 
+			外链式：在实际开发中常用
+			将页面的css代码放在外部的.css文件中，通过link标签的href属性连接
+			外链式和内嵌式、行内式可以同时使用
+		 -->
+		<link rel="stylesheet" type="text/css" href="./test.css" />
+	</head>
+	<body>
+		<!-- 
+			css的行内式写法：实际开发不推荐
+			1、将样式写在标签里面的style属性里
+			2、引号里面的写法和写在head里的样式相同
+			缺点：
+			1、设置的样式只能用于当前元素
+			2、css和html写在一起，可读性比较差，修改也麻烦
+		 -->
+		<div style="color: #00FFFF;font-size: 30px">我是div</div>
+		<div>我是div2</div>
+
+	</body>
+
+</html>

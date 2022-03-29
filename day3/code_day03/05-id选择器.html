@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				id选择器：通过给元素设置id属性来选中这个元素
+				格式：
+				1、给元素设置id属性d1
+				2、通过#d1{属性名：属性值}来选中设置了d1这个id的元素
+				注意点：
+				1、id具有唯一性，尽量不要给不同的元素添加相同的id。
+				2、同一个元素只能有一个id，设置多个id会导致所有的id选择器都失效
+			*/
+		   #d1 {
+			   color: bisque;
+		   }
+		   #d2 {
+			   font-size: 30px;
+		   }
+		</style>
+	</head>
+	<body>
+		<p>p1</p>
+		<p>p2</p>
+		<p id="d1">p3</p>
+		<p>p4</p>
+		<p>p5</p>
+	</body>
+</html>
