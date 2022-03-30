@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				/* w20,按Tab键 */
+				width: 20px;
+				/* h20,按Tab键 */
+				height: 20px;
+				/* bc，按Tab键 */
+				background-color: aqua;
+				/* fs,按Tab键 */
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 生成多个标签，写标签名*num，按Tab键 -->
+		<!-- div*3 -->
+
+		<!-- 父子级关系，用>连接 -->
+		<!-- ul>li*3 -->
+
+		<!-- 兄弟关系，用+连接 -->
+		<!-- div+p+h3 -->
+
+		<!-- 回到上一级，用^连接 -->
+		<!-- ul>li*3^ul>li*3 -->
+
+		<!-- 生成带有类名/id的div -->
+		<!-- .c1 -->
+		<!-- #d1 -->
+
+		<!-- 生成带有类名/id的其他元素 -->
+		<!-- p#d2 -->
+		<!-- p.c2 -->
+
+		<!-- 生成不同类名/id的元素,可以通过加$表示自增 -->
+		<!-- ul>li.c$*3 -->
+		<!-- ul>li#d$*5 -->
+
+		<!-- 使用括号,括号里表示同一级 -->
+		<!-- div>(ul>li>a)+div>p -->
+		<!-- div>ul>li>a^^div>p -->
+
+		<!-- 在标签内部写入内容用{},注意：内容要紧邻元素，在乘积的前面写 -->
+		<!-- ul>li{abc-$}*3 -->
+
+	</body>
+</html>

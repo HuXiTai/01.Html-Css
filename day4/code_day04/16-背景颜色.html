@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			/* 
+				背景颜色：
+				格式：
+				background-color:#+6位十六进制数据 / rgba(3个0-255之间的值) / 颜色的单词
+				默认颜色是transparent
+			 */
+			body {
+				background-color: #FFFF00;
+			}
+
+			div {
+				width: 200px;
+				height: 200px;
+			}
+
+			.c1 {
+
+				background-color: #00FFFF;
+			}
+
+			.c2 {
+				/* 
+					当我们没有设置背景的时候，背景是透明的，会显示父级的背景 
+					我们也可以手动设置背景为透明。
+				*/
+				background-color: transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c1">
+			<div class="c2">c2</div>
+		</div>
+	</body>
+</html>

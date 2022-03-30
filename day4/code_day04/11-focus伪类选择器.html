@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				当我们写一个输入框，点一下这个输入框，有光标在闪动，这叫获得焦点的状态。
+				如果要在这种状态下设置样式，就需要用到focus伪类选择器
+				当我们的鼠标点击了页面其他地方的时候，光标不再在输入框里闪动，这叫失去焦点的状态。
+			*/
+		   input:focus{
+			   width: 200px;
+			   background-color: #00FFFF;
+		   }
+		   input{
+			   background-color: #FF0000;
+		   }
+		</style>
+	</head>
+	<body>
+		<input type="text">
+	</body>
+</html>

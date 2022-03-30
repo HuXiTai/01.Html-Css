@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				在不设置行高的情况下，浏览器为了让文字看起来更好看一些，行高是大于字体大小的。
+				这就导致盒子里面放单行文字的时候，盒子的高度是大于字体大小的。
+				当我们自己改变行高时，行高就会发生变化。
+			 */
+			div{
+				padding: 0;
+				font-size: 20px;
+				line-height: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>我是div</div>
+		<div>我是div</div>
+	</body>
+</html>

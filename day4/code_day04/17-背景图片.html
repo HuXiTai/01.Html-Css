@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				背景图：
+				background-image:url(图片的路径);
+				特点：
+				1、图片小于盒子的大小，图片默认会平铺
+				2、图片大于盒子的大小，图片会从左上角开始，只能显示一部分图片
+				3、可以设置多个图片，中间用逗号分隔，先设置的背景图片在上面，后设置的背景图片在下面
+				
+				background-repeat:
+				no-repeat 不平铺
+				repeat-x x轴上平铺，y轴上不平铺
+				repeat-y y轴上平铺，x轴上不平铺
+				repeat x轴和y轴上都平铺，默认情况
+			 */
+			div{
+				width: 500px;
+				height: 500px;
+				background-image: url(images/zzy.jpg),url(images/hg1.jpg);
+				background-repeat: repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

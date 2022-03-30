@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				设置背景图片的位置，改变的是背景的位置，盒子位置始终不变。
+				格式：
+				background-position：x y;
+				x和y的值：
+				1、x为正数时，图片向右移动；y为正数时图片向下移动；
+				2、x为负数时，图片向左移动；y为负数时图片向上移动。
+				3、x和y可以是方位名词，水平方向(left/right/center),垂直方向(top/bottom/center)
+				4、方位名词和px可以混合使用
+			 */
+			div{
+				width: 500px;
+				height: 500px;
+				/* background-image: url(images/hg1.jpg); */
+				/* background-position: -50px -50px; */
+				
+				background-image: url(images/zzy.jpg);
+				background-repeat: no-repeat;
+				background-position: center 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

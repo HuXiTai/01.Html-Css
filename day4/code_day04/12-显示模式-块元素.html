@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				块元素特点：
+				1、独占一行、宽高、内外边距设置生效
+				2、宽度默认和父级一样宽，高度由内容来决定
+				3、块级元素里可以放其他的块级或行内元素，h1-h6和p除外
+			 */
+			.c1 {
+				width: 100px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="c1">
+				<span>span1</span>
+			</div>
+		</div>
+		<span>s1</span>
+		<span>s2</span>
+		<!-- <p><div>dd</div></p> -->
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				子元素选择器，>符号连接多个基础选择器，设置的是最后一个选择器代表的标签的样式
+				特点：
+				1、>符号连接的两个选择器代表的标签必须是父子关系
+				2、不一定要从body下一级的元素开始
+			 */
+			
+			/* div>div {
+				color: red;
+			} */
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>1</div>
+		</div>
+
+		<div>2</div>
+		
+		<div>
+			<div>
+				<div>3</div>
+			</div>
+		</div>
+		
+		<ul>
+			<li>
+				<div>4</div>
+			</li>
+		</ul>
+		
+	</body>
+</html>

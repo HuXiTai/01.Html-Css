@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				伪类选择器，特点：有冒号
+				
+				hover伪类选择器
+				格式：选择器:hover
+				给选择的标签添加悬停的效果，鼠标放元素上的时候样式生效，移出就不生效了
+				
+				first-child伪类选择器
+				格式：p:first-child{}
+				选中:第一个p元素
+				特点:元素的第一个位置和标签名的两个条件都要满足
+			 */
+			/* p {
+				color: red;
+			}
+
+			p.c1:hover {
+				color: green;
+			} */
+			
+			
+			p:first-child{
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<p>p-1</p>
+		<p>p-2</p>
+		<p>p-3</p>
+		<p>p-4</p>
+		<p>p-5</p>
+	</body>
+</html>

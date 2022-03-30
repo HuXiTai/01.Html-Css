@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				后代选择器：多个基础选择器组成，多个选择器之间用空格连接
+				特点：
+				1、后代选择器的两个基础选择器只要有层级关系就行，不一定要是父子关系
+				2、后代选择器不一定要从body下面的一级标签开始选择
+				3、后代选择器可以有多个基础选择器，设置的是最后一个的样式
+			 */
+			
+			/* div .c2 div {
+				color: red;
+			} */
+			.c2 div {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>1</div>
+		<!-- <div> -->
+			<div class="c1 c2">2
+				<div>3</div>
+			</div>
+		<!-- </div> -->
+
+		<ul>
+			<li class="c2">
+				<div>
+					<div>li</div>
+				</div>
+			</li>
+		</ul>
+		
+		<div>4
+			<div>5</div>
+		</div>
+
+		<div class="c1">6
+			<div>7</div>
+		</div>
+	</body>
+</html>

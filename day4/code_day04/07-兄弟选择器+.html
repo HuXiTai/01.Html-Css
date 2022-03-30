@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			/* 
+				兄弟选择器，+连接两个基础选择器，给+后面的选择器代表的元素设置样式
+				+连接的两个选择器可以多次使用，所有满足条件的都会被选中。
+				
+			 */
+			
+			/* .c1+p {
+				color: red;
+			} */
+
+			p+p {
+				color: red;
+			}
+			
+			/* div+p {
+				color: red;
+			} */
+		</style>
+	</head>
+	<body>
+		<div>d</div>
+		<p>p-1</p>
+		<p>p-2</p>
+		<p class="c1">p-3</p>
+		<p>p-4</p>
+		<p>p-5</p>
+	</body>
+</html>
