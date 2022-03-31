@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+
+			}
+			/* 
+				对于上下排列的两个块级盒子，上面的盒子设置margin-bottom，下面的盒子设置margin-top，
+				他们的外边距并不会叠加，只有设置较大的值的那个外边距才会生效，这叫外边距合并（折叠）。
+				
+				解决：只设置一边的外边距，尽量避免两边都设置。
+			*/
+			.c1 {
+				background-color: #00FFFF;
+				margin-bottom: 90px;
+			}
+
+			.c2 {
+				background-color: #FFFF00;
+				/* margin-top: 50px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c1"></div>
+		<div class="c2"></div>
+	</body>
+</html>

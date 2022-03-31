@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				层叠性：
+				给同一个元素设置相同的选择器，相同的选择器里设置同一个样式，不同样式的值
+				后面的样式就会将前面的覆盖掉，简称后来者居上/就近原则（谁离标签近，谁生效）
+			 */
+
+			div {
+				color: red;
+			}
+
+			div {
+				color: green;
+				font-size: 30px;
+				line-height: 50px;
+				text-align: center;
+			}
+
+			/* p{
+				color: yellow;
+			} */
+		</style>
+	</head>
+	<body>
+		<div class="c1">我是div</div>
+
+		<!-- 
+			继承性：
+			我没有设置p元素的字体颜色，但是它有颜色，说明它从父元素（div）那里继承过来了div的颜色
+			如果设置了p元素的字体颜色，那么设置的生效；如果没有设置，则从父元素那里继承。
+			可以跨层级继承，比如p可以从div那里继承.
+			可以继承的样式有：
+			以color、font-、text-、line-开头的属性
+		 -->
+		<div>
+			<ul>
+				<li>
+					<p>我是p元素</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

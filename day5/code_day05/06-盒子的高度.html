@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				盒子的高度：
+				px、em
+				%：当前盒子占父元素高度的百分比
+				auto:块级、行内块由内容决定(如果是文本，由行高决定)；
+					行内元素:高度由内容决定，高度不受行高影响，设置行高只会影响垂直距离。
+				height:auto用得比较少
+				
+				min-height:设置盒子的最小高度
+				max-height:设置盒子的最大高度
+			 */
+		
+			.big{
+				width: 400px;
+				height: 400px;
+				background-color: #008000;
+			}
+			.small {
+				width: 200px;
+				height: 50%;
+				min-height:100px;
+				max-height: 200px;
+				line-height: 30px;
+				background-color: #00FFFF;
+			}
+			span{
+				height: auto;
+				line-height: 50px;
+				background-color: #FF0000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="small">123</div>
+			<span>span</span>
+		</div>
+	</body>
+</html>

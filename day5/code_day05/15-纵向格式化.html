@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			/* 
+				纵向格式化：
+				1、margin-top和margin-bottom设置为auto，这个时候自动计算为0。margin-top和height设置为auto,margin-bottom设置具体值，设置auto的为0。
+				2、margin-top、margin-bottom和height有一边设置为auto，设置auto的为0.
+				3、margin-top、margin-bottom和height三个属性都设置为auto，三个属性的值都为0
+				4、上、下和height都设置为具体的值，设置的多少就是多少，有些情况会造成过渡约束。
+				
+				总结：谁设auto谁为0！
+			 */
+			.big {
+				width: 300px;
+				height: 300px;
+				background-color: #00FFFF;
+				overflow: hidden;
+			}
+			
+			.small {
+				width: 150px;
+				height: auto;
+				margin-top: 60px;
+				margin-bottom: 60px;
+				background-color: #FAEBD7;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="small"></div>
+		</div>
+	</body>
+</html>

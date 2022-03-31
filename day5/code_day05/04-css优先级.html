@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				优先级：不同的选择器设置了同样的样式名，不同的样式值
+				特点：此时跟样式的书写顺序没有关系，跟选择器的权重有关系
+				权重大小：普通选择器+！important > 行内式 > id选择器 > 类选择器 > 标签选择器
+				注意：
+				1、!important要写在分号的前面。
+				2、权重不能进位。
+				3、复合选择器的权重是去掉连接符号后其他的基础选择器累加的结果。
+			 */
+			* {
+				color: aqua;
+			}
+
+			div {
+				color: red;
+				/* font-size: 30px!important; */
+			}
+
+			html .c1 {
+				color: blue;
+				/* font-size: 40px; */
+			}
+
+			#d1 {
+				color: yellow;
+				font-size: 50px;
+			}
+
+			body {
+				/* font-size: 20px; */
+			}
+
+
+			body #d1 {
+				font-size: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div class="c1" id="d1" style="font-size: 60px">div</div> -->
+		<div class="c1" id="d1">div</div>
+	</body>
+</html>

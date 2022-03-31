@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				width: 580px;
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+			.box a {
+				font-size: 18px;
+			}
+			/* 适合于webKit内核的浏览器 */
+			.box p {
+				margin-top: 5px;
+				margin-bottom: 5px;
+				overflow: hidden;
+				/* 最后显示省略号 */
+				text-overflow: ellipsis;
+				/* 弹性伸缩盒子模型显示 */
+				display: -webkit-box;
+				/* 限制在一个块元素显示的文本的行数 */
+				-webkit-line-clamp: 2;
+				/* 设置或检索伸缩盒对象的子元素的排列方式 */
+				-webkit-box-orient: vertical;
+			}
+			.box p a {
+				font-size: 14px;
+				color: #008000;
+				text-decoration: none;
+			}
+			.box p i {
+				display: inline-block;
+				width: 13px;
+				height: 10px;
+				background-image: url(./triangle.png);
+			}
+			.box p u {
+				display: inline-block;
+				width: 24px;
+				height: 16px;
+				background-image: url(./v2.png);
+			}
+			.box p span, a span {
+				color: #CC0000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<a href="#">零基础开始学<span>Web前端</span>开发,有什么建议吗? - 知乎</a>
+			<p>2017年4月18日 - <span>Web前端</span>开发技术主要包括三个要素:HTML、CSS和JavaScript!它要求前端开发工程师不仅要掌握基本的<span>Web前端</span>开发技术,网站性能优化、SEO和服务器端的基础基础基础基础</p>
+			<p><a href="">https://www.zhihu.com/question...</a> <i></i> <u></u> - 百度快照</p>
+		</div>
+		
+		<div class="box">
+			<a href="#"><span>Web前端</span>技术论坛所有讨论帖 - ITeye论坛频道</a>
+			<p><span>Web前端</span>技术版面讨论, JavaScript编程、AJAX开发、UI界面设计、CSS 分类: JavaScript AJAX EXT JQuery prototype CSS 界面设计</p>
+			<p><a href="">www.iteye.com/forums/b...</a> <i></i> - 百度快照</p>
+		</div>
+	</body>
+</html>

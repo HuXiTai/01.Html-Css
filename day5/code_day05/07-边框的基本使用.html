@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				边框：border
+				边框粗细：单位px
+				边框样式(必须写)：solid(实心线) dotted(点线) dashed(虚线) double(双线)
+				边框颜色:red rgb() #fff
+				
+				重复设置的属性，以后面设置的为准，后来者居上(层叠性)
+				给盒子添加了边框会导致盒子变大。
+			 */
+			.c1{
+				width: 100px;
+				text-align: center;
+				height: 100px;
+				/* 利用复合属性设置:常用 */
+				border: 10px solid yellow;
+				
+				/* 根据属性单独设置：较少使用 */
+				/* border-width: 10px;
+				border-style: dashed;
+				border-color: yellow; */
+				
+				/* 根据方位单独设置,有应用场景 */
+				/* border-top: 1px dashed #0000FF;
+				border-bottom: 1px dashed #0000FF; */
+				
+				/* 
+					各个边框不一样:以颜色为例，其他的属性也是一样 
+					设置1个值：上下左右
+					设置2个值：上下 左右
+					设置3个值：上 左右 下
+					设置4个值：上 右 下 左(顺时针方向)
+				*/
+				/* border-color: red green blue yellow; */
+				/* border-width: 1px 3px 5px 7px; */
+				/* border-style:solid dashed groove dotted; */
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="c1">关于我们</div>
+	</body>
+</html>

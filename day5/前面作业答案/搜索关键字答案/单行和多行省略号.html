@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 单行文本 */
+
+			.c1 {
+				width: 150px;
+				background-color: #FFC0CB;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+
+			.c2 {
+				width: 150px;
+				background-color: #FFC0CB;
+				
+				/* 溢出隐藏 */
+				overflow: hidden;
+				/* 弹性伸缩盒子模型显示 */
+				display: -webkit-box;
+				/* 限制在一个块元素显示的文本的行数 */
+				-webkit-line-clamp: 3;
+				/* 设置或检索伸缩盒对象的子元素的排列方式 */
+				-webkit-box-orient: vertical;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="c1">啥也不说，此处省略一万字,啥也不说</p>
+		<p class="c2">
+			啥也不说，此处省略一万字,啥也不说，此处省略一万字,此处省略一万字
+		</p>
+	</body>
+</html>

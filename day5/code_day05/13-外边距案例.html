@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				background-color: #F4F4F4;
+			}
+
+			.box {
+				width: 220px;
+				height: 325px;
+				background-color: #fff;
+				/* 需要给父元素设置才能居中，目的是让188.0居中 */
+				text-align: center;
+				overflow: hidden;
+				padding: 0 10px;
+			}
+
+			.box img {
+				/* 让图片居中，居中的条件：1、块级盒子；2、盒子有宽度；3、水平margin设置auto */
+				display: block;
+				width: 150px;
+				margin: 40px auto;
+			}
+
+			.box b {
+				/* 行内元素设置margin不生效 */
+				display: block;
+				color: red;
+				margin-top: 10px;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="./images/nz.jpg" alt="">
+			<div>BOOSGARTH男装短袖t恤男士夏季宽松翻领polo衫青年休闲</div>
+			<b>￥188.0</b>
+		</div>
+	</body>
+</html>

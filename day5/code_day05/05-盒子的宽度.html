@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				盒子宽度单位：
+				px、%(以父元素的宽度为参照)、em(相对于当前的字体大小)
+				auto:对块级元素来说，设置auto和父元素一样宽;对行内元素来说，宽度由内容决定。
+				
+				min-width:设置的宽度还是以width为准，但是最小值不能低于min-width设置的值。
+				max-width:设置的宽度还是以width为准，但是最大不能超过max-width设置的值。
+			 */
+			.small {
+				width: 50%;
+				min-width: 100px;
+				max-width: 200px;
+				height: 100px;
+				background-color: #00FFFF;
+			}
+			
+			.big {
+				width:400px;
+				height: 400px;
+				background-color: #008000;
+				font-size: 20px
+			}
+			
+			.s1 {
+				width: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="small"></div>
+			<span class="s1"></span>
+		</div>
+	</body>
+</html>

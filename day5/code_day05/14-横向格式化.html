@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				1、margin-left、margin-right、width其中一个设置auto,另外两个设置具体值时，
+				设置auto会自动补全撑满容纳块的宽度。
+				2、margin-left、margin-right、width其中两个设置auto
+				情况一：margin-left、margin-right为auto，那么盒子居中，左右两边外边距平分
+				情况二：margin-left和width为auto,margin-right为具体值，此时width撑满，margin-left为0。
+				3、margin-left、margin-right、width都设置为auto
+				margin-left、margin-right为0，width撑满父容器。
+				4、width、margin-left、margin-right都设置具体的值。这种情况叫过度约束。
+			 */
+			.big {
+				width: 300px;
+				height: 300px;
+				background-color: #00FFFF;
+			}
+
+			.small {
+				width: auto;
+				height: 150px;
+				margin-left: auto;
+				margin-right: 50px;
+				background-color: #FAEBD7;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="small"></div>
+		</div>
+	</body>
+</html>

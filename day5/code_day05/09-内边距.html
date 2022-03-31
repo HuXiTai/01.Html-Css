@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				padding内边距：设置盒子里内容与边框之间的距离
+				添加了padding的盒子会导致盒子变大。
+				
+			 */
+			div {
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+				/* 
+					设置一个值：上下左右都有padding 20px 
+					设置两个值：上下的padding值 左右的padding值
+					设置三个值：上padding值   左右padding值  下padding值
+					设置四个值：上padding值 右padding值 下padding值 左padding值
+				*/
+				/* padding: 20px 40px 60px 80px; */
+
+				/* em参照的是当前的字体大小 */
+				/* padding: 1em; */
+
+				/* 利用百分比，参照的是父元素 */
+				/* padding: 10%; */
+
+				/* 针对上下左右具体的方位设置内边距 */
+				/* padding-bottom: 20px; */
+				/* background: url(images/zzy.jpg) no-repeat; */
+			}
+
+			/* 
+				行内元素设置内边距，会导致盒子变大，但是水平方向占位，垂直方向不占位。
+			 */
+			span {
+				background-color: #00FFFF;
+				padding: 20px;
+			}
+			/* 
+				行内块元素，设置内边距也是生效的，会导致盒子变大 
+				如果不想盒子变大，用宽高把增加的两边的内边距减掉然后重新设置即可。
+			*/
+			input {
+				width: 180px;
+				height: 10px;
+				padding: 10px;
+			}
+			.a1 {
+				width: 200px;
+				height: 200px;
+				background-color: #0077AA;
+				padding: 50px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div>陈梦回小区时那个盛况啊人山人海都在为这位奥运双冠王喝彩，陈梦得到了家乡父老的认可也十分开心。或许有人会质疑陈梦在全运会上没有拿下一枚金牌，可了解陈梦的球迷与家乡人知道陈梦的右肩早就伤了，她是带着肩伤支撑完了全运会
+		</div>
+		<div class="a1">
+			同样的渐渐阿丹不过是一笔一划在同样的一张子上写不同的一撇一啦，怎么可能会一模一样，都在货出不同形状，你管我什么情况管我活出什么行政
+		</div>
+
+		<span>span</span>收旧手机<br />
+		收电脑，收旧电脑 <br />
+		<input type="text">
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				很多标签都有默认的内外边距，比如body,ul,p等等
+				导致我们在写页面的时候无法做到完全按照设计的样式来写。
+				所以我们可以先将所有标签的内外边距清除，然后再单独来设置。
+				这叫css初始化。
+			 */
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			li {
+				list-style-type: none;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			/* 
+				嵌套关系的两个盒子，里面的盒子设置margin-top会导致外面的盒子跟着一起向下移动，顶边始终重合，
+				这叫外边距塌陷。
+				
+				解决方法：
+				1、给外面的盒子加顶部边框
+				2、给父元素设置overflow：hidden/auto/overlay等等
+				3、给父元素设置内上边距，不要给子盒子设置外边距。
+			 */
+			.out {
+				width: 300px;
+				height: 250px;
+				background-color: #00FFFF;
+				padding-top: 50px;
+				/* overflow: hidden; */
+				/* border-top: 1px solid transparent; */
+				margin-left: 50px;
+			}
+
+			.in {
+				width: 150px;
+				height: 150px;
+				background-color: antiquewhite;
+				/* margin-top: 50px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="out">
+			<div class="in"></div>
+		</div>
+
+		<ul>
+			<li>li-3</li>
+			<li>li-3</li>
+			<li>li-3</li>
+		</ul>
+		<p>ppp</p>
+	</body>
+</html>

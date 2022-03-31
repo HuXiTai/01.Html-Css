@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			.c1 {
+				width: 100px;
+				height: 100px;
+				background-color: #00FFFF;
+				/* 四个方向一起设置，也可以写两个值、三个值、四个值，和padding设置四个方向时一样的 */
+				/* margin: 30px; */
+				
+				/* 对每个方向单独设置，一般设置了left就不会设置right，以免过渡约束 */
+				/* margin-left: 50px; */
+				/* margin-right: 50px; */
+				/* margin-top: 50px; */
+				/* margin-bottom: 30px; */
+				/* 外边距的设置不影响盒子的大小 */
+				
+				/* 
+					应用：让一个盒子在大盒子里水平居中，
+					设置水平上的margin为auto，目的就是让浏览器帮我们去计算剩余宽度,即(父容器宽度-盒子宽度)/2
+				*/
+				/* margin-left: 633px; */
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c1"></div>
+		收旧冰箱
+	</body>
+</html>
