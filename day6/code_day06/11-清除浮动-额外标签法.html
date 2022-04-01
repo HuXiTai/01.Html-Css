@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				清除浮动方法一：额外标签法
+				1、给添加浮动的元素添加一个兄弟元素（必须是块级）
+				2、给添加的兄弟元素设置样式clear：left/right/both(通用)
+			 */
+			
+			.box{
+				width: 200px;
+				border: 1px solid red;
+			}
+			.box>div{
+				float: left;
+				width: 50px;
+				height: 50px;
+				background-color: #00FFFF;
+			}
+			.c{
+				width: 200px;
+				height: 150px;
+				background-color: #FFC0CB;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<p style="clear: both;"></p>
+		</div>
+		<div class="c"></div>
+	</body>
+</html>

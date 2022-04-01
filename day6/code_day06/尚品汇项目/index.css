@@ -1,0 +1,186 @@
+/* 
+	初始样式
+ */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	color: lightgreen;
+}
+
+.w {
+	margin: 0 auto;
+	width: 1200px;
+	/* background-color: #00FFFF; */
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/* ------------------------------------ */
+
+/* 头部 */
+body>div>.head {
+	font-size: 12px;
+	line-height: 30px;
+	height: 30px;
+	background-color: #EAEAEA;
+	color: #333;
+}
+
+.head a {
+	color: #666;
+}
+
+.head a:hover {
+	color: lightgreen;
+}
+
+.head .left {
+	float: left;
+}
+
+.head ul {
+	float: right;
+	height: 30px;
+}
+
+.head ul li {
+	float: left;
+}
+
+/* 搜索 */
+.search {
+	height: 56px;
+	margin: 20px 0;
+}
+
+.search img {
+	float: left;
+}
+
+.search .search_box {
+	float: right;
+	margin-top: 12px;
+}
+
+.search .search_box input {
+	width: 490px;
+	height: 28px;
+	border: 2px solid red;
+	outline: none;
+}
+
+.search .search_box a {
+	display: inline-block;
+	width: 70px;
+	height: 32px;
+	background-color: red;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+}
+
+/* 导航栏 */
+
+/* 导航栏头部区 */
+.nav .nav_head {
+	border-bottom: 2px solid red;
+	height: 48px;
+	font-size: 16px;
+}
+
+.nav .nav_head ul li {
+	float: left;
+	line-height: 48px;
+}
+
+.nav .nav_head ul li:first-child {
+	width: 210px;
+	text-align: center;
+	color: #fff;
+	background-color: red;
+}
+
+.nav .nav_head ul li a {
+	padding: 0 20px;
+}
+
+/* 导航栏内容区 */
+.nav .nav_body .nav_left {
+	float: left;
+	height: 450px;
+	width: 190px;
+	padding: 10px 0 0 20px;
+	background-color: #FAFAFA;
+	font-size: 14px;
+}
+
+.nav .nav_body .nav_left a {
+	display: block;
+	padding: 5px 0;
+}
+
+.nav .nav_body .nav_mid {
+	float: left;
+	width: 730px;
+	height: 454px;
+	margin: 6px 6px 0 6px;
+}
+
+.nav .nav_body .nav_right .nav_news {
+	float: left;
+	width: 246px;
+	height: 371px;
+	margin-top: 6px;
+	border: 1px solid #E4E4E4;
+}
+
+.nav .nav_body .nav_right img {
+	width: 248px;
+	margin-top: 7px;
+}
+
+.nav .nav_body .nav_right .nav_news .nav_news_top {
+	height: 181px;
+	padding: 0 5px 0 5px;
+	/* background-color: #00FFFF; */
+}
+
+.nav .nav_body .nav_right .nav_news .nav_news_top .head {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #E4E4E4;
+	font-size: 12px;
+}
+
+.nav .nav_body .nav_right .nav_news .nav_news_top .body {
+	height: 135px;
+	font-size: 12px;
+	padding: 5px 0 0 10px;
+	/* background-color: #00FFFF; */
+}
+.nav .nav_body .nav_right .nav_news .nav_news_top .body li{
+	padding: 5px 0;
+}
+
+.nav .nav_body .nav_right .nav_news .nav_news_bottom {
+	border-top: 1px solid #E4E4E4;
+}

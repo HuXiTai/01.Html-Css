@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			/* 
+				浮动特性：
+				浮动元素后面的元素顶边不能比前面任何一个浮动元素的顶边高
+				父子盒子都加浮动时，父盒子高度不会塌陷，会被子盒子撑开。
+			 */
+			.box{
+				float: left;
+				width: 200px;
+				/* height: 400px; */
+				border:1px solid red;
+			}
+			.box>div{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: #00FFFF;
+			}
+			.box .c1{
+				float: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="c1">标准流</div>
+			<div style="height: 70px;">浮动2</div>
+			<div>浮动3</div>
+		</div>
+	</body>
+</html>

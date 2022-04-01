@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			/* 
+				浮动特性：
+				float:left时，一行放不下浮动元素时会换行从左边界再排列，
+				新起一行的浮动元素上边界不能高于上一个浮动元素的下边界。
+			 */
+			.box{
+				width: 200px;
+				height: 400px;
+				border:1px solid red;
+			}
+			.box>div{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: #00FFFF;
+			}
+			.box .c2{
+				height:180px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>1</div>
+			<div class="c2">2</div>
+			<div>3</div>
+		</div>
+	</body>
+</html>
