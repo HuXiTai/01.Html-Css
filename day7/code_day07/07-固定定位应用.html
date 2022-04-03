@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+			/* 
+				left可以和margin-left配合使用，一般先设置left：50%让盒子左边线在中间，
+				再通过margin-left调整水平方向上的位置（设置为版心的一半）
+			 */
+			.w{
+				width: 1200px;
+				height: 2000px;
+				margin:0 auto;
+				border: 1px solid red;
+			}
+			.box{
+				position: fixed;
+				left: 50%;
+				margin-left: 603px;
+				top: 100px;
+				width: 30px;
+				height: 200px;
+				background-color: #00FFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="w"></div>
+		<div class="box">固<br/>定<br/>导<br/>航<br/>栏</div>
+	</body>
+</html>

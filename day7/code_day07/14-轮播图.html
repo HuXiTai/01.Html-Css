@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.container {
+				position: relative;
+				width: 520px;
+				height: 280px;
+				margin: 50px auto;
+			}
+			.container>div,ul{
+				position: absolute;
+			}
+			.left,.right{
+				width: 30px;
+				height: 50px;
+				color: #fff;
+				font-size: 22px;
+				line-height: 50px;
+				text-align: center;
+				background-color: rgba(0,0,0,.2);
+			}
+			.left{
+				top: 50%;
+				margin-top: -25px;
+				border-top-right-radius: 30px;
+				border-bottom-right-radius: 30px;
+			}
+			.right{
+				right: 0;
+				top: 50%;
+				margin-top:-25px;
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+			}
+			.bottom{
+				bottom: 0;
+				margin-bottom: 10px;
+				left:50%;
+				margin-left: -40px;
+				width: 80px;
+				height: 14px;
+				background-color: rgba(255,255,255,.5);
+				border-radius: 7px;
+			}
+			
+			.red{
+				background-color: red;
+			}
+			
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			ul li{
+				float: left;
+				width: 10px;
+				height: 10px;
+				background-color: #fff;
+				border-radius: 5px;
+				margin-left: 5px;
+				margin-top:2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="images/tb.jpg" alt="">
+			<div class="left"><</div>
+			<div class="right">></div>
+			<ul class="bottom">
+				<li class="red"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

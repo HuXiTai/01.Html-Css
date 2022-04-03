@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			/* 
+				固定定位：一般用于网页的右侧菜单/广告栏
+				1、以浏览器的可视区域为参照，跟父级没有关系
+				2、固定定位是一种特殊的绝对定位，不占位！
+				3、加了定位但没加边偏移时，初始位置并不是在浏览器左上角，该出现在哪里就是哪里。
+				4、加了边偏移之后，可以再通过margin属性进行调整位置
+			 */
+			body {
+				height: 4000px;
+			}
+
+			.c1 {
+				/* position: absolute; */
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+				margin-left: 50px;
+				margin-top: 50px;
+			}
+
+			.c2 {
+				position: fixed;
+				/* left:50%; */
+				right:0;
+				margin-right: 20px;
+				width: 50px;
+				height: 150px;
+				background-color: #FAEBD7;
+			}
+			.c3{
+				width: 100px;
+				height: 100px;
+				background-color: #00FFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c1">
+			<div class="c2"></div>
+			<div class="c3"></div>
+		</div>
+	</body>
+</html>

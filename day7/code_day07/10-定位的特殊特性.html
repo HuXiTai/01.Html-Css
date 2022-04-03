@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				1、行内元素添加绝对/固定定位，和浮动类似，会导致行内元素宽高生效。
+				
+				2、父盒子设置绝对定位，那么父盒子不占位；如果此时父盒子没有高度，
+				子盒子也是绝对定位/固定定位，那么父盒子的高度为0(为上下边框的高度)；
+				子盒子是相对定位，那么父盒子的高度会被子盒子的高度撑开。
+			 */
+			span{
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				background-color: #00FFFF;
+			}
+			/* .box{
+				position: absolute;
+				width: 300px;
+				border: 1px solid red;
+			}
+			.tiny_box{
+				position: absolute;
+				width: 150px;
+				height: 150px;
+				background-color: #00FFFF;
+			} */
+		</style>
+	</head>
+	<body>
+		<!-- 给行内元素设置绝对/固定定位，宽高会生效 -->
+		<!-- <span>span</span> -->
+		
+		<div class="box">
+			<div class="tiny_box"></div>
+		</div>
+		
+		<!-- 验证绝对定位后面的盒子会跑到前面去 -->
+		<!-- <div style="width:200px;height: 200px;border: 1px solid blue;"></div> -->
+	</body>
+</html>

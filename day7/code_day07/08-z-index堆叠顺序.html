@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				使用绝对定位/固定定位的元素，发生堆叠的时候:
+				默认情况下(z-index:0)，后面的元素在上面。
+				设置了z-index后，设置的值越大的越靠上，不设置的默认为0。
+			 */
+			body{
+				margin:0;
+			}
+			div{
+				position: fixed;
+				width: 100px;
+				height: 100px;
+			}
+			.c1{
+				left:20px;
+				top:20px;
+				background-color: #00FFFF;
+			}
+			.c2{
+				left:40px;
+				top:40px;
+				background-color: antiquewhite;
+			}
+			.c3{
+				z-index: -1;
+				left:60px;
+				top:60px;
+				background-color: blueviolet;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c1"></div>
+		<div class="c2"></div>
+		<div class="c3"></div>
+	</body>
+</html>

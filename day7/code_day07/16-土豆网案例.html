@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.container {
+				position: relative;
+				width: 450px;
+				height: 300px;
+			}
+
+			.container>img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.mask {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				background-color: rgba(0, 0, 0, .3);
+			}
+
+			.mask>img {
+				margin-top: 133px;
+			}
+			/* 
+				加hover的对象和要改变样式的对象不一样时，可以在加hover以后接着写选择器
+				伪类选择器和后代选择器的结合
+			 */
+			.container:hover .mask{
+				display: block;
+			}
+			
+			/* .container:hover+div {
+				color: red;
+			} */
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="images/tudou.jpg">
+			<div class="mask">
+				<img src="images/arr.png" alt="">
+			</div>
+		</div>
+		<!-- <div>我是你兄弟</div> -->
+	</body>
+</html>

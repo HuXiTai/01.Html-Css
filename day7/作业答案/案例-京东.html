@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				width: 1150px;
+				height: 390px;
+				/* border: 1px solid red; */
+				margin: 100px auto;
+			}
+
+			/* 要注意盒子边框的宽度对横向布局的影响 */
+			.box>div {
+				float: left;
+				width: 350px;
+				height: 390px;
+				/* background-color: aliceblue; */
+				/* border: 1px solid #008000; */
+			}
+
+			.c1>img,
+			.c3>img {
+				float: left;
+			}
+
+			.c2 {
+				margin-left: 50px;
+			}
+
+			.c3 {
+				margin-left: 50px;
+			}
+			.mt10 {
+				margin-top: 10px;
+			}
+			.ml10 {
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="c1">
+				<img src="images/left01.png" alt="">
+				<img class="ml10" src="images/left02.png" alt="">
+				<img class="mt10" src="images/left03.png" alt="">
+				<img class="mt10 ml10" src="images/left04.png" alt="">
+			</div>
+			<div class="c2">
+				<img src="images/center.png" alt="">
+			</div>
+			<div class="c3">
+				<img src="images/right01.png" alt="">
+				<img class="ml10" src="images/right02.png" alt="">
+				<img class="mt10" src="images/right03.png" alt="">
+				<img class="mt10 ml10" src="images/right04.png" alt="">
+			</div>
+		</div>
+	</body>
+</html>

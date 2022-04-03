@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			/* 
+				加了定位的盒子，在不设置宽高的情况下，它的大小可由设置的边偏移来决定，即父盒子宽/高减去边偏移得到的盒子大小。
+				left、right决定水平方向；top、bottom决定垂直方向。
+			 */
+			.big{
+				position: relative;
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+			}
+			.small{
+				position:absolute;
+				/* width: 100px; */
+				background-color: #00FFFF;
+				left: 50px;
+				right:50px;
+				top: 50px;
+				bottom: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="small"></div>
+		</div>
+	</body>
+</html>
