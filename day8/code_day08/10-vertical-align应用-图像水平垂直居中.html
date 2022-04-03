@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				当盒子有设置宽高，盒子里的图片如何实现垂直居中？
+				1、vertical-align:midlle，让图片的垂直中线和文字的x-height的1/2处对齐
+				2、盒子的line-height设置为盒子的高度，让文字垂直居中。
+				3、此时文字的中线是盒子的垂直中线，由于文字的中线在x-height的1/2线之上，图片只是近似垂直居中，并且字体越大居中越不明显。
+				4、将盒子里文字的font-size设为0,让文字的四线合一，此时图片就真正居中了。
+			 */
+			.c1 {
+				width: 500px;
+				height: 500px;
+				border: 1px solid red;
+				text-align: center;
+				line-height: 500px;
+				font-size: 0px;
+			}
+
+			img {
+				width: 200px;
+				vertical-align: middle;
+			}
+
+			.c2 {
+				width: 100px;
+				border: 1px solid red;
+				line-height: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c1">
+			<img src="images/huluwa.jpg" alt="">
+		</div>
+		<br>
+		<div class="c2">葫芦娃x</div>
+	</body>
+</html>

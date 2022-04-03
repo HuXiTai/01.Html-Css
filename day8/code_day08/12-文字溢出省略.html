@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.c1{
+				width: 200px;
+				background-color: coral;
+				/* 让文字不换行 */
+				white-space: nowrap;
+				/* 溢出的文字隐藏 */
+				overflow: hidden;
+				/* 超出部分用省略号来表示 */
+				text-overflow: ellipsis;
+			}
+			/* 
+				多行文本显示省略号有兼容性问题，了解即可。
+				实际开发中，可以让后台来实现这个功能。
+			 */
+			.c2{
+				width: 130px;
+				background-color: aqua;
+				/* 超出行数的文本要隐藏 */
+				overflow: hidden;
+				/* 设置要显示的文本的行数 */
+				-webkit-line-clamp: 3;
+				/* 设置为弹性伸缩盒子 */
+				display: -webkit-box;
+				/* 设置伸缩盒子子元素的排列方式 */
+				-webkit-box-orient: vertical;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c1">神舟十三即将启程，新太空三人组将出差半年</div> <br>
+		
+		<div class="c2">神舟十三即将启程，新太空三人组将出差半年，其中有一名女性</div>
+	</body>
+</html>

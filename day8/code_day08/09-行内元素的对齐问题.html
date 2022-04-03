@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				一个行内块元素，如果里面没有内容，那么该盒子的基线是其底部边缘；
+				当盒子里有内容时，基线变为盒子里最后一行文字的基线。
+			 */
+		
+			body {
+				/* font-size: 0; */
+			}
+
+			div {
+				display: inline-block;
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>1 <br> 2<br> 3x</div>
+		<div></div>
+		<div>4</div>
+	</body>
+</html>

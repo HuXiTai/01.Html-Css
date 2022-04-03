@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 400px;
+				height: 400px;
+				border: 1px solid red;
+				/* 让div里的文字默认是垂直居中，目的是和行内块元素的基线对齐 */
+				line-height: 400px;
+				/* 让父盒子的四线合一，让行内块元素实现真正地垂直居中 */
+				font-size: 0;
+			}
+
+			span {
+				/* 父盒子的font-size要设为0，不设font-size文字会看不见 */
+				font-size: 16px;
+				/* 因为转行内块之后有基线，可以利用基线和父盒子的文字对齐 */
+				display: inline-block;
+				/* 避免从父盒子那里继承400px的行高，我们希望span里的行高设为默认值，所以设为normal，它会比字体大小稍大 */
+				line-height: normal;
+				/* 让当前的行内块元素span和父盒子div里文字的x-height1/2处对齐 */
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>
+				20世纪末美国和俄罗斯结束了太空竞赛，在空间站建设上展开了合作，参与的还有日本以及欧盟的一些国家。我国寻求加入国际空间站建设，但是遭到了美国的单方面拒绝，从那个时候开始我们立志要搞中国自己的空间站，打破美国的技术封锁。2021年我国空间站的建设组建开始了，进入了发射阶段。
+			</span>
+		</div>
+	</body>
+</html>

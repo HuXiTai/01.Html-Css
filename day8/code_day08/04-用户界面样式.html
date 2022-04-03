@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				cusor:改变鼠标移动到设置该样式的元素上时光标的样式，只改样式，不改功能。
+			 */
+			div{
+				cursor: not-allowed;
+			}
+			
+			input{
+				border: 1px solid red;
+				outline: none;
+			}
+			textarea{
+				/* outline: none; */
+				width: 200px;
+				height: 200px;
+				outline-style: dashed;
+				outline-color: #0000FF;
+				outline-width: 5px;
+				border:1px solid yellow;
+				
+				resize: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div>我是div</div>
+		<input type="text">
+		<textarea rows="20" cols="20"></textarea>
+	</body>
+</html>

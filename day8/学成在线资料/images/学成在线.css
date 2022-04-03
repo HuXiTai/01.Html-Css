@@ -1,0 +1,203 @@
+* {
+	font-size: 18px;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	color:lightgreen;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+li {
+	list-style: none;
+}
+ul {
+    margin: 0px;
+	padding: 0px;
+}
+.w {
+	margin: 0 auto;
+	width: 1720px;
+}
+.w1 {
+	margin: 0 auto;
+	width: 1904px;
+}
+body {
+	background-color: #F2F5F7;
+}
+
+.xczx {
+	padding: 40px;
+	height: 130px;
+	font-size: 0px;
+}
+.xczx div {
+	font-size: 25px;
+	line-height: 130px;
+	
+}
+.xczx div img {
+	vertical-align: middle;
+}
+.xczx_1 img {
+	width: 400px;
+}
+
+.xczx input {
+	padding: 0 20px;
+	width: 460px;
+	outline: none;
+	border: 2px solid #00A7FF;
+	height: 40px;
+}
+.xczx_3 img {
+	height: 44px;
+	margin-top: -1px;
+}
+.xczx_4 img {
+	height: 46px;
+}
+.xczx_4 {
+	font-size: 16px;
+}
+.php {
+	/* overflow: hidden; */
+	position: relative;
+	height: 660px;
+}
+.php1 {
+	left: 50%;
+	margin-left: -855px;
+	position: absolute;
+}
+.php>img {
+	position: absolute;
+	width: 1904px;
+}
+.php1_1{
+	left: 0px;
+	position: absolute;
+	background-color: rgba(0,0,0,.3);
+}
+.php1_1 div{
+	margin: 36.5px;
+	color: white;
+	font-size: 25px;
+}
+.php1_2 {
+	right: 0px;
+	position: absolute;
+	width: 300px;
+	margin-top: 65px;
+}
+.php1_2_1 {
+	line-height: 60px;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	background-color: #88D0EB;
+}
+.php1_2_2_1 {
+	
+	font-size: 24px;
+}
+.php1_2_2_2 {
+	color: #D8BDB4;
+}
+.php1_2_5 div {
+	font-size: 24px;
+	color: #1CB5FF;
+	text-align: center;
+	border: 2px solid #1CB5FF;
+	height: 60px;
+	line-height: 60px;
+}
+.php1_2_1~div {
+	padding: 20px;
+	background-color: #fff;
+	margin: ;
+}
+.jptj {
+	overflow: hidden;
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+.jptj1 {
+	font-size: 24px;
+	padding: 30px;
+}
+.jptj1 span {
+	color: #0FACFF;
+	font-size: 24px;
+}
+.jptj2 {
+	font-size: 20px;
+	line-height: 90px;
+	color: #0FACFF;
+}
+.think1_1{
+	font-size: 24px;
+}
+.think1 {
+	padding: 40px 0;
+}
+.think2_1 {
+	padding: 22px;
+	width: 300px;
+	/* line-height: 50px; */
+	background-color: #fff;
+}
+.think2_1_1 {
+	position: relative;
+}
+.think2_1_1 #think {
+	right: -5px;
+	top: 5px;
+	width: 50px;
+	position: absolute;
+}
+
+
+.think2_1_1 img {
+	width:300px ;
+}
+.think2_1_2 {
+	padding: 40px 40px 20px 40px;
+	/* padding: 30px 0px; */
+}
+
+.xz1_1 img {
+	width: 400px;
+}
+.xz1_2 {
+	padding: 30px 0;
+}
+.xz1_3 {
+	width: 180px;
+	height: 50px;
+	font-size: 30px;
+	color: #0FACFF;
+	text-align: center;
+	line-height: 50px;
+	border: 2px solid #0FACFF;
+}
+.xz2 ul{
+	padding: 0px 80px;
+}
+.xz2 ul li {
+	line-height: 30px;
+}
+.xz2 ul li:first-child {
+	font-size: 22px;
+}
+.xz {
+	padding-top: 850px;
+}
