@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 
+			video：视频标签
+			src：视频路径
+			controls：是否显示播放控制按钮（播放/暂停），必加属性，否则无法播放
+			width:设置播放控件的宽度
+			height:设置播放控件的高度
+			loop:设置了loop会循环播放视频
+			poster：等待播放时显示的图片
+			muted:静音播放视频
+			autoplay:是否在页面加载完后，自动播放视频。注意：要想自动播放，必须静音才行。
+			
+			在video标签里写多个source标签，那么在播放时会从上往下去匹配，知道匹配到可以播放的视频。
+			为避免在不支持video标签的浏览器上显示不出来视频，可以设置一个提示信息。
+		 -->
+		<video controls width="300" loop poster="images/1.jpg" muted autoplay>
+			<source  src="./images/video.webm" type="video/webm">
+			<source  src="./images/video.ogg" type="video/video/ogg">
+			<source  src="./images/video.mp4" type="video/mp4">
+			您的浏览器暂不支持&lt;video&gt;标签播放视频
+		</video>
+	</body>
+</html>

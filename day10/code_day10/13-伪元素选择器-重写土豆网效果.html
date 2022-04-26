@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				position: relative;
+				width: 450px;
+				height: 300px;
+			}
+
+			.box>img {
+				width: 100%;
+				height: 100%;
+			}
+			/* 子绝父相 */
+			.box::before {
+				position: absolute;
+				display: none;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				content: "";
+				background: rgba(0, 0, 0, .3) url(images/arr.png) no-repeat center center;
+			}
+
+			/* 鼠标移入到box内，box的伪元素选择器被选中 */
+			.box:hover::before {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="./images/tudou.jpg" alt="">
+		</div>
+	</body>
+</html>

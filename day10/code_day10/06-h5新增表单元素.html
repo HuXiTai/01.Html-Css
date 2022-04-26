@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 
+			email：要有@以及后面的内容
+			url：前面一定要加协议
+			color:hsl/rgb/hex,hsl表示色相、饱和度、亮度
+			
+			属性：
+			autofocus:输入框自动获得焦点，只能设置一个控件，不能多个控件同时获得焦点
+			autocomplete:自动提示历史选项,一定要添加name属性
+			form属性:对当前控件指定所属的form表单，属性的值为form表单的id值
+			multiple:设置是否允许多个email/url等等。多个email之间用逗号分隔。
+			pattern:自己写正则表达式定义填写规则,格式不正确会错误提示框
+			placeholder:给输入框添加未输入内容的提示信息
+			required：必填项
+		 -->
+		<form action="test.php" id="f1">
+			<ul>
+				<li>邮箱：<input type="email" autofocus name="email"></li>
+				<li>网址：<input type="url" autocomplete="on" name="website" multiple></li>
+				<li>日期：<input type="date"></li>
+				<li>时间：<input type="time"></li>
+				<li>数量：<input type="number"></li>
+				<li>手机号码：<input type="tel" pattern="1[3-9][0-9]{9}"></li>
+				<li>搜索：<input type="search" required placeholder="请输入搜索内容"></li>
+				<li>颜色：<input type="color"></li>
+			</ul>
+		</form>
+		<input type="submit" form="f1">
+	</body>
+</html>

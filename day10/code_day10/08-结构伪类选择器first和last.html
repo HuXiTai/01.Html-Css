@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				选择器：first-child --> 前面的选择器匹配元素的情况下，父元素下的子元素的顺序在兄弟元素中排第一
+				选择器：last-child --> 前面的选择器匹配元素的情况下，父元素下的子元素的顺序在兄弟元素中排倒数第一
+			 */
+			/* li:first-child{
+				color: red;
+			}
+			li:last-child{
+				color: #00FFFF;
+			} */
+			
+			/* 
+				当元素是body的子元素时，只有first-child会生效,last-child不会生效,
+				这是由于我们运行文件的时候，HX启动了服务器，在我们标签的最后加了三个script标签，导致了我们写的p元素本质上不是最后一个元素。
+				当以静态文件的形式打开网页时，两个都是生效的。
+			*/
+			p:first-child{
+				color: red;
+			}
+			p:last-child{
+				color: #00FFFF;
+			}
+			
+			/* 冒号前面可以是基础选择器,也可以是一个复合选择器 */
+			/* ul>li>ul>.c1:first-child{
+				color: red;
+			}
+			ul>li>ul>.c1:last-child{
+				color: #00FFFF;
+			} */
+		</style>
+	</head>
+	<body>
+		<!-- <ul>
+			<li>li-1</li>
+			<li>li-2</li>
+			<li>
+				<ul>
+					<li>li-01</li>
+					<li class="c1">li-02</li>
+					<li class="c1">li-03</li>
+					<li class="c1">li-04</li>
+					<li class="c1">li-05</li>
+				</ul>
+			</li>
+			<li>li-4</li>
+			<li>li-5</li>
+			<li>li-6</li>
+		</ul> -->
+		
+		
+		<p>p-1</p>
+		<p>p-2</p>
+		<p>p-3</p>
+		<p>p-4</p>
+		<p>p-5</p>
+		
+	</body>
+</html>

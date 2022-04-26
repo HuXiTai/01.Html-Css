@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				checked选择器，通常和input标签配合使用，
+				一般选中时不给input标签设置样式，而是给它的兄弟设置。
+			*/
+			#man:checked+span {
+				background-color: #00FFFF;
+			}
+
+			#man:checked+span::after {
+				content: "被选中";
+			}
+
+			#woman:checked+span {
+				background-color: pink;
+			}
+
+			#woman:checked+span::after {
+				content: "被选中";
+			}
+		</style>
+	</head>
+	<body>
+
+		<input type="radio" name="sex" id="man"><span>男</span>
+		<input type="radio" name="sex" id="woman"><span>女</span>
+	</body>
+</html>

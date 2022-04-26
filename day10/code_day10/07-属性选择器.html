@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				属性选择器：
+				格式：基础选择器[属性内容] --> 交集选择器
+				li[id]：表示设置了id属性的li元素
+				li[id="d1"]：表示设置了id属性并且属性的值为d1的li元素
+				li[id^="d"]:表示设置了id属性并且属性的值以d开头的li元素
+				li[id$="1"]:表示设置了id属性并且属性的值以1结尾的li元素
+				li[id*="2"]:表示设置了id属性并且属性的值包含字符2的li元素
+			*/
+			/* li[id] {
+				color: red;
+			} */
+			
+			/* li[id="d1"]{
+				color: red;
+			} */
+			
+			/* li[id^="d"] {
+				color: red;
+			} */
+			
+			/* li[id$="1"] {
+				color: red;
+			} */
+			
+			/* li[id*="2"] {
+				color: red;
+			} */
+			
+			/* 权重问题:属性选择器权重为10 */
+			/* ul .c1{
+				color: #00FFFF;
+			}
+			li[class="c1"]{
+				color: #8A2BE2;
+			} */
+			
+			/* 是否可以单独使用？可以，单独使用表示选择所有标签，相当于在前面加了* */
+			/* [id="d1"]{
+				color: red;
+			} */
+			
+			/* 可以选择多个属性,权重以中括号为准，一对中括号是10 */
+			
+			body .c3 .c1{
+				color: #FFFF00;
+			}
+			li[class="c1"][id][abc="1"]{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="c3">
+			<li>li-1</li>
+			<li class="c1" id="d3" abc="1">li-2</li>
+			<li id="d1">li-3</li>
+			<li id="d2">li-4</li>
+			<li>li-5</li>
+			<li class="c1">li-6</li>
+		</ul>
+		<p id="d1">p-1</p>
+	</body>
+</html>

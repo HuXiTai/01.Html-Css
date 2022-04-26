@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		    .bigbox {
+				width: 750px;
+				margin: 0px auto;
+			}
+			.head {
+				overflow: hidden;
+				position: relative;
+				width: 750px;
+				height: 600px;
+				background-image: url(kof-01.jpg);
+			}
+			.head>div {
+				position: absolute;
+				width: 750px;
+				height: 600px;
+			}
+			#kof1:target {
+				background-image: url(kof-01.jpg);
+			}
+			#kof2:target {
+				background-image: url(kof-02.jpg);
+			}
+			#kof3:target {
+				background-image: url(kof-03.jpg);
+			}
+			#kof4:target {
+				background-image: url(kof-04.jpg);
+			}
+			#kof5:target {
+				background-image: url(kof-05.jpg);
+			}
+			.fl{
+				float: left;
+			}
+			.foot {
+				background-color: #888;
+				overflow: hidden;
+				position: relative;
+				width: 750px;
+			}
+			.foot a {
+				margin: 10px;
+				float: left;
+				width: 130px;
+			}
+			.foot img {
+				
+				width: 130px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bigbox">
+			<div class="head">
+				<div id="kof1"></div>
+				<div id="kof2"></div>
+				<div id="kof3"></div>
+				<div id="kof4"></div>
+				<div id="kof5"></div>
+			</div>
+			<div class="foot">
+				<a href="#kof1" class="kof1"><img src="kof-01.jpg" ></a>
+				<a href="#kof2" class="kof2"><img src="kof-02.jpg" ></a>
+				<a href="#kof3" class="kof3"><img src="kof-03.jpg" ></a>
+				<a href="#kof4" class="kof4"><img src="kof-04.jpg" ></a>
+				<a href="#kof5" class="kof5"><img src="kof-05.jpg" ></a>
+			</div>
+		</div>
+	</body>
+</html>

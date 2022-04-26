@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 引入字体 */
+			@font-face {
+			  font-family: 'icon';
+			  src:  url('fonts/icomoon.eot?3i9yz4');
+			  src:  url('fonts/icomoon.eot?3i9yz4#iefix') format('embedded-opentype'),
+			    url('fonts/icomoon.ttf?3i9yz4') format('truetype'),
+			    url('fonts/icomoon.woff?3i9yz4') format('woff'),
+			    url('fonts/icomoon.svg?3i9yz4#icomoon') format('svg');
+			  font-weight: normal;
+			  font-style: normal;
+			  font-display: block;
+			}
+			
+			div{
+				position: relative;
+				width: 329px;
+				height: 360px;
+				font-size: 30px;
+				color: #888;
+				background-image: url(images/floor-1-b01.png);
+			}
+			/* 
+				字体图标里content的内容设置为\+图标对应的代号，然后设置字体为我们定义的字体。
+			*/
+			div::before{
+				position: absolute;
+				top:50%;
+				margin-top:-15px;
+				content: "\ea72";
+				font-family: icon;
+			}
+			div::after{
+				position: absolute;
+				top:50%;
+				margin-top:-15px;
+				right: 0;
+				content: "\ea6e";
+				font-family: icon;
+				
+			}
+			span{
+				font-family: icon;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		
+		
+		<span></span>
+		<span></span>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				nth-child(n)：指的是从前往后,从1开始数，第n符合选择器条件的元素，
+				而且该元素在兄弟元素中排第n。
+				n不仅可以是一个具体的数字，还可以是一个表达式,当表达式里有n时，n从0开始计算，公式计算结果的范围只能大，不能小。
+				1、n是一个具体的数字，比如0,1,2
+				2、n是一个公式，比如：n+9,4n,奇数：2n+1,偶数：2n
+				3、n是一个单词，odd(奇数)，even(偶数)
+			 */
+			li:nth-child(2n){
+				color: red;
+			}
+			li:nth-last-child(3){
+				color: #00FFFF;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<p>pp</p>
+			<li>li-1</li>
+			<li>li-2</li>
+			<li>
+				<ul>
+					<li>li-01</li>
+					<li class="c1">li-02</li>
+					<li class="c1">li-03</li>
+					<li class="c1">li-04</li>
+					<li class="c1">li-05</li>
+				</ul>
+			</li>
+			<li>li-4</li>
+			<li>li-5</li>
+			<li>li-6</li>
+			<p>pp</p>
+		</ul>
+		
+	</body>
+</html>

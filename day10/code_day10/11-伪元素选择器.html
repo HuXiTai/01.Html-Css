@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				伪元素选择器：
+				在选择器的后面添加两个冒号，后面再加上before或者after，相当于在盒子的前后各加了两个元素，元素里的内容是content属性的值。
+				
+				伪元素选择器权重为1
+				伪元素选择器规范地写法就是写两个冒号（css3的特点），但是一个冒号（css2的特点）也是可以的
+			 */
+			
+			.box::before{
+				content: "我";
+				background-color: #00FFFF;
+			}
+			.box::after{
+				content: "小猪佩奇";
+				background-color: #00FFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">是</div>
+	</body>
+</html>

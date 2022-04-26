@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#id1:checked+label span {
+				background-color: #008BC6;
+			}
+
+			#id2:checked+label span {
+				background-color: #008BC6;
+			}
+			
+			#id3:checked+label span {
+				background-color: #008BC6;
+			}
+			
+			#id4:checked+label span {
+				background-color: #008BC6;
+			}
+			input {
+				display: none;
+			}
+
+			span {
+				color: #FFFFFF;
+				margin: 20px;
+				display: block;
+				width: 300px;
+				height: 40px;
+				line-height: 40px;
+				/* text-align: center; */
+				padding-left: 20px;
+				background-color: #9ED8F1;
+			}
+			span::before {
+				content: "x";
+			}
+		:checked+label span::before {
+				content: "狗";
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" name="sex" id="id1">
+		<label for="id1"><span>&emsp;&emsp;&emsp;泰迪</span></label>
+		<input type="checkbox" name="sex" id="id2">
+		<label for="id2"><span>&emsp;&emsp;&emsp;毕加索</span></label>
+		<input type="checkbox" name="sex" id="id3">
+		<label for="id3"><span>&emsp;&emsp;&emsp;中华田园犬</span></label>
+		<input type="checkbox" name="sex" id="id4">
+		<label for="id4"><span>&emsp;&emsp;&emsp;二哈+阿拉斯加</span></label>
+
+	</body>
+</html>

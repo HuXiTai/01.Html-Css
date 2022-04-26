@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				选择器:not(条件) --> 选择器选择的所有元素中，除了not括号里满足条件的除外，其余的都被选中。
+				通常用于：除了某个/某几个元素以外，其余的元素都设置某种样式。
+			 */
+			
+			/* li:not(.c1){
+				color: red;
+			} */
+			
+			/* :not(p)表示除p以外的所有元素，注意：not前面的冒号不能省略 */
+			:not(p){
+				color: yellow;
+			}
+			body{
+				color: #00FFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>li-1</li>
+			<li>li-2</li>
+			<li class="c1">li-3</li>
+			<li>li-4</li>
+			<li>li-5</li>
+		</ul>
+		
+		<p>p-1</p>
+		<p>p-2</p>
+		<p>p-3</p>
+	</body>
+</html>
