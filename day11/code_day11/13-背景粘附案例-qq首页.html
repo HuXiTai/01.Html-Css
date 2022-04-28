@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+
+			.p1 {
+				width: 100%;
+				height: 680px;
+				background-image: url(images/qq/01.jpg);
+				background-size: 1366px;
+			}
+
+			.p2 {
+				height: 342.5px;
+				background-image: url(images/qq/02.png);
+				background-size: 1366px;
+			}
+
+			.p3 {
+				height: 500px;
+				background-image: url(images/qq/03.jpg);
+				background-size: 1366px;
+				background-attachment: fixed;
+			}
+
+			.p4 {
+				height: 600px;
+			}
+
+			.p4>.container {
+				position: relative;
+				width: 1050px;
+				height: 600px;
+				margin: 0 auto;
+			}
+			/* 
+				方法一
+			 */
+			/* .p4>.container::before{
+				display:inline-block;
+				position: absolute;
+				top: -200px;
+				width: 664px;
+				height: 763px;
+				content: "";
+				background-image: url(images/qq/05.png);
+			}
+			.p4>.container::after{
+				position: absolute;
+				display: inline-block;
+				right: 0;
+				top: 200px;
+				content: "";
+				width: 487px;
+				height: 107px;
+				background-image: url(images/qq/04.png);
+			} */
+			
+			/* 
+				方法二 
+			 */
+			/* content的值可以是一个图片 */
+			.p4>.container::before {
+				position: absolute;
+				top: -200px;
+				content: url(images/qq/05.png);
+				width: 664px;
+				height: 763px;
+			}
+			
+			.p4>.container::after {
+				position: absolute;
+				top: 200px;
+				right: 0;
+				content: url(images/qq/04.png);
+				width: 487px;
+				height: 107px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="p1"></div>
+			<div class="p2"></div>
+			<div class="p3"></div>
+			<div class="p4">
+				<div class="container"></div>
+			</div>
+		</div>
+	</body>
+</html>

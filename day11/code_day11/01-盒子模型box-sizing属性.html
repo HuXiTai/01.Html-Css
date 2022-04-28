@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				默认情况下，我们设置的盒子的宽高只是它的内容区，
+				我们我们希望直接设置盒子的大小，让它不受边框和内边距的影响，
+				我们可以使用box-sizing:border-box;
+				此时盒子的内容区<=设定的盒子的宽高。
+				
+				在默认情况下box-sizing等于content-box.
+			 */
+			.box{
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

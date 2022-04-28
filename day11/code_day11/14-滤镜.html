@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				filter滤镜，默认值为none
+			 */
+			div {
+				width: 414px;
+				height: 370px;
+				background-image: url(./images/xmn.jpg);
+			}
+
+			div:hover {
+				/* 1、blur(模糊距离px)：模糊特效，0表示不模糊，值越大越模糊 */
+				/* filter: blur(10px); */
+				
+				/* 2、设置灰度grayscale(参数)，参数的值在0-1之间,0没有变化，1变纯灰色 */
+				/* filter:grayscale(1); */
+				
+				/* 3、设置不透明度，参数范围：0-1，1没有变化,0全透明 */
+				/* filter: opacity(0.1); */
+				
+				/* 4、设置红褐色。100%时全褐色，0%没有变化 */
+				/* filter: sepia(100%); */
+				
+				/* 5、反色，100%的时候完全反转。0%无变化 */
+				/* filter:invert(60%); */
+				
+				/* 6、亮度,0为纯黑色，100%原图，大于100%亮度增加 */
+				/* filter: brightness(50%); */
+				
+				/* 7、对比度，0为纯灰色，100%没有变化，大于100%对比度加强 */
+				/* filter:contrast(200%); */
+				
+				/* 8、饱和度,0%是灰色，100%没有变化，大于100%饱和度加强 */
+				/* filter: saturate(250%); */
+				
+				/* 滤镜可以叠加 */
+				filter: invert(60%) sepia(80%) blur(4px);
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

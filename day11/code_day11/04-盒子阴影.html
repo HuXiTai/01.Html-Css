@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				盒子阴影：
+				格式：box-shadow: h-shadow v-shadow blur spread color inset;
+				h-shadow:阴影在水平方向上的偏移量，正数往右
+				v-shadow:阴影在垂直方向上的偏移量，正数往下
+				blur：模糊距离，盒子和影子之间的距离，距离越远越模糊。
+				spread：阴影的尺寸，值越大，阴影部分越大。
+				color:阴影的颜色。
+				inset:内部阴影还是外部阴影，默认是外部阴影，设为inset表示内部阴影。
+				
+				注意：
+				可以给盒子设置多个阴影，多个阴影中间用英文状态下逗号隔开，设置多个阴影效果会叠加。
+			 */
+			div{
+				width: 200px;
+				height: 200px;
+				border: 1px solid gray;
+				margin: 50px 50px;
+				box-shadow: 10px 10px 15px 10px rgba(0,0,0,.3) inset, 10px 10px 15px 10px rgba(0,0,0,.3);
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		    body {
+				background-color: #00ED62;
+			}
+			.fl {
+				float: left;
+			}
+			.bigbox {
+				margin: 200px auto;
+				width: 500px;
+				height: 500px;
+			}
+			.bg_h {
+				position: relative;
+				width: 250px;
+				height: 500px;
+				border-radius: 250px 0 0 250px;
+				background-color: #000;
+			}
+			.bg_b_1 {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 125px;
+				height: 250px;
+				border-radius: 250px 0 0 250px;
+				background-color: #fff;
+			}
+			.bg_b {
+				position: relative;
+				width: 250px;
+				height: 500px;
+				border-radius: 0 250px 250px 0;
+				background-color: #fff;
+			}
+			.bg_h_1 {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 125px;
+				height: 250px;
+				border-radius: 0 250px 250px 0;
+				background-color: #000;
+			}
+			.bg_h_2 {
+				position: absolute;
+				top: 50%;
+				margin-top: -25px;
+				left: 100%;
+				margin-left: -25px;
+				width: 50px;
+				height: 50px;
+				border-radius: 25px;
+				background-color: #000;
+				z-index: 1;
+			}
+			.bg_b_2 {
+				position: absolute;
+				bottom: 50%;
+				margin-bottom: -25px;
+				right: 100%;
+				margin-right: -25px;
+				width: 50px;
+				height: 50px;
+				border-radius: 25px;
+				background-color: #fff;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bigbox">
+			<div class="bg_h fl">
+				<div class="bg_b_1">
+					<div class="bg_h_2"></div>
+				</div>
+			</div>
+			<div class="bg_b fl">
+				<div class="bg_h_1">
+					<div class="bg_b_2"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				width: 200px;
+				height: 100px;
+				/* background-color: #008BC6; */
+				opacity: 0.5;
+			}
+
+			/* 
+				opacity属性：取值范围0-1,0表示全透明,1表示完全不透明
+				如果子盒子没有设置opacity属性，可以从父元素那里继承；如果只有子盒子单独设置，以子盒子设置的为准。
+				如果父子盒子都设置了opacity，子盒子的opacity = 父盒子的opacity*子盒子的opacity的值。
+				
+			 */
+			.box:hover {
+				/* rgba里的a只对背景生效，对背景里的内容不生效 */
+				/* background-color: rgba(0, 139, 198,0.3); */
+				
+				/* opacity不仅对背景生效，对盒子里的内容也生效 */
+				/* opacity: 0.5; */
+			}
+			.tiny_box{
+				opacity: 0.5;
+			}
+			.tiny_box2{
+				opacity: 0.25;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="tiny_box">我是一个盒子</div>
+		</div>
+		<div class="tiny_box2">我是一个盒子</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				background-origin:背景定位的基准
+				作用：决定background-position的初始位置。
+				属性值：
+				border-box：从边框的左上角开始铺背景图片
+				padding-box:从内边距的外边界开始铺背景图片
+				content-box:从内容区的左上角开始铺背景图片
+			 */
+			.box{
+				width: 500px;
+				height: 350px;
+				background-image: url(images/huluwa.jpg);
+				border:30px dotted red;
+				padding: 30px;
+				background-origin:border-box;
+				/* background-position: 35px 35px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

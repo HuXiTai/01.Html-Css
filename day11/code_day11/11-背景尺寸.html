@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				background-size:设置背景图片的大小
+				可以设置的值有：px % contain cover
+				
+				设置两个值时：第一个表示宽，第二个表示高
+				设置一个值时:宽度是我们设置的这个值，高度会保持宽高比不变的情况下自动计算。
+				
+				设像素值时：表示背景图宽/高的长度
+				
+				设百分比时：表示背景图宽/高占父容器的比例
+				
+				设置cover时：图片宽高比不变的情况下，宽高会自动地拉伸或缩小,
+				直到图片的宽和高都能覆盖整个盒子。缺点：背景图有部分可能被裁剪。
+				
+				设置contain时：图片宽高比不变的情况下，宽高会自动地拉伸或缩小,
+				拉伸或缩小到宽/高有一个先和盒子的宽/高一致的位置。缺点：盒子可能有一部分区域没有被背景图覆盖。
+			 */
+			div{
+				width: 500px;
+				height: 200px;
+				border: 10px solid red;
+				background-image: url(images/huluwa.jpg);
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

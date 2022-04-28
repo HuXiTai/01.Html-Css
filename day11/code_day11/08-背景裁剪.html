@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				背景的平铺是从内边距的外边界开始铺，覆盖整个边框。
+				background-clip:
+				border-box:从内边距的外边界开始铺，覆盖整个边框
+				padding-box:从内边距的外边界开始铺，不覆盖边框
+				content-box:从内边距的外边界开始铺，从内容区的外边界开始显示图片，
+					padding区和边框区的背景都被裁剪了。
+			 */
+			.box{
+				width: 500px;
+				height: 350px;
+				border: 30px dotted red;
+				background-image: url(images/huluwa.jpg);
+				/* background-repeat: no-repeat; */
+				padding: 30px;
+				background-clip: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
