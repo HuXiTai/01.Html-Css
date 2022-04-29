@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 100px;
+				background-color: #525254;
+			}
+
+			.box {
+				position: relative;
+				width: 300px;
+				height: 200px;
+				text-align: center;
+				background-color: #fff;
+				background-size: 20px 20px;
+				background-position: -10px -10px;
+				background-image: radial-gradient(5px, #525254 5px, white 5px);
+			}
+
+			.box>img {
+				width: 280px;
+				height: 180px;
+				margin-top: 10px;
+			}
+
+			.box::before,
+			.box::after {
+				position: absolute;
+				color: #525254;
+				font-weight: bold;
+			}
+
+			.box::before {
+				content: "8";
+				right: 45px;
+				top: 5px;
+				font-size: 35px;
+			}
+
+			.box::after {
+				content: "分";
+				right: 20px;
+				top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="./images/youpiao.jpg" alt="">
+		</div>
+	</body>
+</html>

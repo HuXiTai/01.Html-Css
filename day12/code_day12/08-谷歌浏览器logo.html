@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				可以给盒子设置多个渐变，先设置的渐变显示在上面。
+			 */
+			div {
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				background-image:
+					/* 先画一个蓝色的实心圆，圆的外边还有一圈白色圆环 */
+					radial-gradient(blue 27%, white 27%, white 30%, transparent 30%),
+					/* 画一个黄色的圆弧 */
+					linear-gradient(-49deg, yellow 35%, transparent 35%),
+					/* 画一个绿色的圆弧 */
+					linear-gradient(60deg, green 35%, transparent 35%),
+					/* 画一个红色的圆弧 */
+					linear-gradient(180deg, red 30%, transparent 30%),
+					/* 对上面的圆弧有缺失的部分进行填充 */
+					linear-gradient(0deg, green 37%, transparent 37%),
+					linear-gradient(-100deg, yellow 40%, transparent 40%),
+					linear-gradient(130deg, red 45%, transparent 45%);
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

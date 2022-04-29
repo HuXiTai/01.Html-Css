@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				梯度线：默认从上往下，相当于180deg
+				1、linear-gradient(red,green)，仅设置两个颜色，从上到下，从一个颜色过渡到另一个颜色。
+				2、linear-gradient(45deg,red,green,blue);设置了45deg,表示梯度线的角度,角度可以是正值也可以是负值。一般设置的范围是-180deg - 180deg
+				3、linear-gradient(to left top,red,green,blue);利用方位名词设置了梯度线的方向
+				4、linear-gradient(to right,green 10%,red 40%,blue 100%);百分比是相对于盒子的宽高来计算，表示到某一个位置开始显示某种颜色。
+				5、linear-gradient(to right,green 20px,red ,blue 180px);位置用像素表示，表示的是盒子里某一个位置的颜色，也可以不写。
+				6、linear-gradient(to right,green 30%,red 30%,red 70%,blue 70%);可以不设置渐变，只需要在同一个位置插两种颜色就可以。
+			 */
+			.box1{
+				width: 200px;
+				height: 100px;
+				border: 1px solid red;
+				margin: 150px;
+				background-image: linear-gradient(to right,green 30%,red 70%,blue 70%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+	</body>
+</html>

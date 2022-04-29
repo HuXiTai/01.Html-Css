@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				重复线性渐变，我们不需要将颜色位置写到100%，写到某一个值(比如10%)，从10%的位置开始重复去做线性渐变。
+			 */
+			.box{
+				width: 400px;
+				height: 40px;
+				border: 1px solid green;
+				background-image: repeating-linear-gradient(-70deg, yellow 2.5%,black 2.5%,black 7%,yellow 7%,yellow 10%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

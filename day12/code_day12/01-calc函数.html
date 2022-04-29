@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				height: 768px;
+			}
+			/* 
+				当我们的盒子不方便直接给宽/高度，但是我们有一个条件，可以通过计算获得（+ - * /）
+				那么，我们就可以使用calc函数，参数里可以有%，px
+				注意点：+ - * /左右两边一定要加空格，否则无效。
+			 */
+			div{
+				/* width: calc(50% - 50px); */
+				/* width: calc(50% + 50px); */
+				/* width: calc(50% * 2 - 50px); */
+				width: calc(50% / 2);
+				height: 50%;
+				background-color: antiquewhite;
+			}
+		</style>
+	</head>
+	<body>
+		<div>内容区</div>
+	</body>
+</html>

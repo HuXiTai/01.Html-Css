@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				普通渐变，从50%开始以后全是blue
+				linear-gradient(to right, yellow 0%, red 10%, green 30%, blue 50%);
+				
+				重复线性渐变，从50%开始后面是一个新的渐变循环
+				repeating-linear-gradient(to right, yellow 0%, red 10%, green 30%, blue 50%);
+			 */
+			.box{
+				width: 400px;
+				height: 40px;
+				background-image: repeating-linear-gradient(to right, yellow 0%, red 10%, green 30%, blue 50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

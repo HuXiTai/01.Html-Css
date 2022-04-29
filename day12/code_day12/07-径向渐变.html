@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				径向渐变：
+				1、radial-gradient(red,green);从圆心开始往外形成一圈一圈地圆，大圆的半径相当于梯度线。
+				2、radial-gradient(red 30%,green 60%,yellow 90%);我们可以在颜色的后面加上百分比，
+				表示以盒子中心为圆心，半径占当前的最大的圆的半径的百分比所形成的圆是我们设置的颜色。
+				3、radial-gradient(red 30px,green 60px,yellow 90px);从圆心开始，半径为30px的圆是红色，半径为60px的圆是绿色，依次类推。
+				4、radial-gradient(50px, red 30%,green 60%,yellow 90%);从圆心开始画一个半径为50px的圆，以圆的半径为梯度线在圆内渐变。
+				5、radial-gradient(100px 50px, red 30%,green 60%,yellow 90%);从圆心开始，以设定的宽高的值的2倍画一个椭圆/圆，在椭圆内径向渐变。
+				6、radial-gradient(100px 50px at 30% 30%, red 30%,green 60%,yellow 90%);at后面可以写x和y的坐标，表示圆心在盒子里的位置。
+			 */
+			.box{
+				
+				width: 400px;
+				height: 400px;
+				border:1px solid green;
+				background-image: radial-gradient(100px 50px at 30% 30%, red 30%,green 60%,yellow 90%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<table border="" cellspacing="" cellpadding="" bo>
+				<tr><th>Header</th></tr>
+				<tr><td>Data</td></tr>
+			</table>
+			<marquee behavior="" direction=""></marquee>
+			<iframe src="" frameborder="0" scrolling=" "></iframe>
+		</div>
+	</body>
+</html>

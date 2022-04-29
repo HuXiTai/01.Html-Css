@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			ul {
+				margin: 0;
+				list-style-type: none;
+			}
+
+			li {
+				width: 300px;
+				height: 30px;
+				margin-top: 20px;
+			}
+
+			li>input {
+				display: none;
+			}
+			
+			/* 让label变成行内块，设置宽高 */
+			li>label {
+				display: inline-block;
+				width: 300px;
+				height: 30px;
+			}
+			
+			/* 点击某个label时设置的样式 */
+			li>input:checked+label::before {
+				content: "√";
+				background-color: #F08148;
+			}
+			
+			/* label的前面加上矩形框 */
+			li>label::before{
+				display:inline-block;
+				vertical-align: middle;
+				content:"";
+				width: 30px;
+				height: 30px;
+				border: 1px solid #F08148;
+				margin-right: 10px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 30px;
+				color: #fff;
+			}
+			
+			/* 点击最后一个label时，label加上文字“小伙子，你的思想很危险” */
+			li:last-of-type>input:checked+label::after {
+				content: "小伙子，你的思想很危险";
+				color: red;
+				font-size: 12px;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><input type="radio" id="s" name="yz"><label for="s">聂哥真帅呀</label></li>
+			<li><input type="radio" id="yj" name="yz"><label for="yj">聂哥真英俊！</label></li>
+			<li><input type="radio" id="syj" name="yz"><label for="syj">聂哥又帅又英俊！</label></li>
+			<li><input type="radio" id="c" name="yz"><label for="c">聂哥真丑</label></li>
+		</ul>
+	</body>
+</html>

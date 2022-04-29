@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			ul {
+				margin: 0;
+				list-style-type: none;
+				margin: 100px auto;
+			}
+
+			li {
+				width: 500px;
+				/* li的初始高度设为40px,隐藏超出部分的内容 */
+				height: 40px;
+				overflow: hidden;
+				/* 给li添加高度变化的过渡效果 */
+				transition: height 2s;
+			}
+
+			li:hover {
+				height: 340px;
+			}
+
+			li>h4 {
+				width: 490px;
+				height: 40px;
+				margin: 0;
+				margin-top: 1px;
+				padding-left: 10px;
+				color: #fff;
+				font-size: 14px;
+				line-height: 40px;
+				background-color: #D9E3EB;
+			}
+
+			li:nth-child(2)>h4 {
+				background-color: #FEDEE6;
+			}
+
+			li:nth-child(3)>h4 {
+				background-color: #E98CBC;
+			}
+
+			li:nth-child(4)>h4 {
+				background-color: #B7CB8A;
+			}
+
+			li:nth-child(5)>h4 {
+				background-color: #B699AB;
+			}
+
+			li>div {
+				text-align: center;
+			}
+
+			li>div>img {
+				height: 200px;
+				margin-top: 50px;
+				/* 初始状态图片是隐藏的 */
+				opacity: 0;
+				/* 给图片加opacity改变的过渡效果，延迟500ms执行 */
+				transition: opacity 2s ease-in 500ms;
+			}
+			/* 当鼠标放到li上时，图片显示 */
+			li:hover>div>img {
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<h4>温柔贤惠</h4>
+				<div><img src="images/wrxh.jpg" alt=""></div>
+			</li>
+			<li>
+				<h4>甜美时尚</h4>
+				<div><img src="images/tmss.jpg" alt=""></div>
+			</li>
+			<li>
+				<h4>独立稳重</h4>
+				<div><img src="images/dlwz.jpg" alt=""></div>
+			</li>
+			<li>
+				<h4>妩媚性感</h4>
+				<div><img src="images/wmxg.jpg" alt=""></div>
+			</li>
+			<li>
+				<h4>女汉子</h4>
+				<div><img src="images/nhz.jpg" alt=""></div>
+			</li>
+		</ul>
+	</body>
+</html>

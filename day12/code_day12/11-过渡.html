@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+				background-color: #FFFF00;
+				
+				/* 加在盒子上有反向过渡的效果，加在盒子的hover上是没有反向过渡的 */
+				transition: all 3s cubic-bezier(.13,.87,.83,.17) 1s;
+			}
+			.box:hover{
+				width: 400px;
+				height: 400px;
+				background-color: green;
+				font-size: 50px;
+				/* 过渡的属性:all指所有属性，如果想只对某一个属性设置过渡，值设为属性名 */
+				/* transition-property: all; */
+				/* 过渡的时间,要加单位，s或者ms milli second*/
+				/* transition-duration: 3000ms; */
+				/* 设置过渡的运动曲线:可选参数，默认是ease，我们可以设置ease-in ease-out ease-in-out,或者自定义贝塞尔曲线 */
+				/* transition-timing-function: cubic-bezier(.13,.87,.83,.17); */
+				/* 过渡的延迟时间：可选参数，单位和过渡时间一样 */
+				/* transition-delay: 2s; */
+				
+				/* 复合属性transition:property duration timing-function delay */
+				/* transition: all 3s cubic-bezier(.13,.87,.83,.17) 1s; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">我是盒子</div>
+	</body>
+</html>
