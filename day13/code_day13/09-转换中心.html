@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				转换中心：transform-origin:x y;
+				默认的旋转中心在盒子的水平和垂直方向的中点。
+				参数单位：
+				px：比如50px 50px,表示调整转换中心为距离盒子左上角的x和y的点。
+				百分比:比如10% 10%,表示调整转换中心为距离盒子左上角为盒子宽高的10%的点。
+				方位名词：比如left top表示调整转换中心为盒子左上角
+			 */
+			 body{
+				 text-align: center;
+			 }
+			.box{
+				width: 200px;
+				height: 200px;
+				margin: 100px auto 0;
+				background-color: #00FFFF;
+				transition: transform 1s;
+				transform-origin: left top;
+			}
+			.box:hover{
+				/* transform: rotate(90deg); */
+				transform:scale(1.5);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			A
+		</div>
+		我是文字
+	</body>
+</html>

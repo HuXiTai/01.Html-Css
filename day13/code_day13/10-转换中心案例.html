@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+			}
+
+			.box {
+				overflow: hidden;
+				margin: 100px auto;
+				border: 1px solid red;
+			}
+
+			.box:hover>.text {
+				transform: rotate(0);
+			}
+
+			.text {
+				background-color: #00FFFF;
+				transform-origin: left bottom;
+				transition: transform 1s;
+				transform: rotate(90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="text">硅谷之火</div>
+		</div>
+	</body>
+</html>

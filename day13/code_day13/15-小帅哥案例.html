@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			@keyframes run {
+				/* 向右走执行的动画 */
+				from {
+					margin-left: 0;
+					background-image: url(images/pic/1.gif);
+				}
+
+				25% {
+					margin-left: 453px;
+					background-image: url(images/pic/1.gif);
+				}
+				
+				/* 向下走执行的动画 */
+				25.1% {
+					margin-top: 0;
+					background-image: url(images/pic/2.gif);
+				}
+
+				50% {
+					margin-top: 413px;
+					background-image: url(images/pic/2.gif);
+				}
+				
+				/* 向左走执行的动画 */
+				50.1% {
+					margin-left: 453px;
+					background-image: url(images/pic/3.gif);
+				}
+
+				75% {
+					margin-left: 0px;
+					background-image: url(images/pic/3.gif);
+				}
+				
+				/* 向上走执行的动画 */
+				75.1% {
+					margin-top: 413px;
+					background-image: url(images/pic/4.gif);
+				}
+
+				to {
+					margin-top: 0px;
+					background-image: url(images/pic/4.gif);
+				}
+			}
+
+			.box {
+				width: 500px;
+				height: 500px;
+				border: 1px solid red;
+				margin: 50px auto;
+			}
+
+			.box>div {
+				width: 47px;
+				height: 87px;
+				background-image: url(images/pic/0.gif);
+				background-repeat: no-repeat;
+				animation: run 12s linear 2s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>
+			</div>
+		</div>
+	</body>
+</html>

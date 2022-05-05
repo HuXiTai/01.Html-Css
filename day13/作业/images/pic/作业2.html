@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.big {
+				width: 500px;
+				height: 500px;
+				border: 1px solid red;
+				margin: 50px auto;
+			}
+			.smell {
+				width: 47px;
+				height: 88px;
+				background-repeat: no-repeat;
+				background-image: url(0.gif);
+				animation-name: run;
+				animation-duration: 12s;
+				animation-delay:2s;
+				animation-timing-function:linear;
+				animation-iteration-count: infinite;
+				/* animation: run 12s linear 2s; */
+			}
+			@keyframes run {
+				0% {
+					background-image: url(1.gif);
+					margin-left: 0px;
+				}
+				25% {
+					background-image: url(1.gif);
+					margin-left: 453px;
+				}
+				25.1% {
+					background-image: url(2.gif);
+					margin-top: 0px;
+				}
+				50% {
+					background-image: url(2.gif);
+					margin-top: 412px;
+				}
+				50.1% {
+					background-image: url(3.gif);
+					margin-left: 453px;
+				}
+				75% {
+					background-image: url(3.gif);
+					margin-left: 0px;
+				}
+				75.1% {
+					background-image: url(4.gif);
+					margin-top: 412px;
+				}
+				100% {
+					background-image: url(4.gif);
+					margin-top: 0px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="smell"></div>
+		</div>
+	</body>
+</html>

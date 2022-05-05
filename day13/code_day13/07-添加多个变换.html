@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+			/* 
+				多个变换之间用空格隔开，多个变换之间顺序不同，效果有可能不同。
+				变换的书写顺序决定了盒子最终的终点在哪里，那么过渡的过程是多个变换在同时执行。
+			 */
+			body {
+				margin: 0;
+			}
+
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: #00FFFF;
+				transition: transform 1s;
+			}
+			div:hover{
+				transform:translateX(50px) rotate(90deg) ;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>A</div>
+	</body>
+</html>

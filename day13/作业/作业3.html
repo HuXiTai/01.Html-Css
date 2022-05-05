@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		    .big {
+			    width: 1600px;
+				background-color: #0000FF;
+				animation: type2 10s 1s infinite;
+				box-sizing:border-box;
+	 	    }
+			.smell {
+				width: 200px;
+				height: 100px;
+				background-image: url(bear.png);
+				background-repeat: no-repeat;
+				animation: type 1s steps(8) 1s forwards infinite ;
+			}
+			@keyframes type {
+				from{
+					background-position:0px 0px ;
+				}
+				to{
+					background-position: -1600px 0px;
+				}
+			}
+			@keyframes type2 {
+				from{
+					padding-left: 0px;
+				}
+				to{
+					padding-left: 1400px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="smell"></div>
+		</div>
+		
+	</body>
+</html>

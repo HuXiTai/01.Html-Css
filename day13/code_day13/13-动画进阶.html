@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				动画进阶：
+				animation-timing-function:设置运动曲线
+				animation-delay:设置动画的延迟执行时间,单位s或者ms
+				animation-iteration-count: 3;设置动画的循环执行次数，第二次执行动画的时候没有延迟，希望动画一直执行用infinite。
+				
+				animation-direction:动画循环的方向
+				默认是normal，从0%-100%；还可以设置reverse，反方向执行动画，从100%-0%；
+				alternate：从0%-100%，再从100%-0%，只有运行2次以上才会有效果。
+				alternate-reverse：从100%-0%，再从0%-100%，只有运行2次以上才会有效果。
+				
+				animation-fill-mode:动画等待或者结束之后的状态，决定执行完后是停留在100%,还是停留在0%。
+				forwards:等待时在初始状态，动画执行结束后停留在100%；
+				backwards:等待时在第一帧的状态，动画执行结束后停留在初始位置；
+				both:等待时在第一帧的状态，动画执行结束后停留在100%;
+				
+				animation-play-state:表示动画的执行和暂停
+				running：表示执行动画
+				paused：表示暂停
+				
+				复合属性animation：
+				animation: name duration timing-function delay iteration-count direction fill-mode;
+			 */
+			body{
+				margin: 0;
+			}
+			@keyframes anim {
+				0% {
+					margin-left: 200px;
+				}
+				100% {
+					margin-left: 1166px;
+				}
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				background-color: #00FFFF;
+				/* animation-name: anim;
+				animation-duration: 3s;
+				animation-timing-function: ease-in;
+				animation-delay: 2s;
+				animation-iteration-count: 1;
+				animation-direction: normal;
+				animation-fill-mode:backwards; */
+				
+				/* 复合属性的写法 */
+				animation:anim 2s ease-in 2s 1 normal forwards; 
+			}
+			.box:hover{
+				animation-play-state: paused;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

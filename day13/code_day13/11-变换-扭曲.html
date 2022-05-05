@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				扭曲变换
+				skew(x,y):x和y分别表示x轴和y轴上扭曲的角度,可以是整数，也可以是负数。
+				skewX(x):x表示x轴上的扭曲的角度
+				skewY(y):y表示y轴上的扭曲的角度
+				
+			 */
+			.box {
+				width: 200px;
+				height: 200px;
+				background-color: #00FFFF;
+				margin: 100px;
+				transition: transform 1.5s;
+			}
+
+			.box:hover {
+				transform: skewX(30deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

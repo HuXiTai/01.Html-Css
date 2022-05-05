@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* --------------公共样式-------------- */
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+
+			a {
+				display: block;
+				width: 100px;
+				height: 40px;
+				text-decoration: none;
+				color: #FFF;
+				font-size: 14px;
+				line-height: 40px;
+				text-align: center;
+				background-color: #191919;
+			}
+
+			a:hover {
+				color: green;
+			}
+
+			/* ------------------------------- */
+			/* box的高度只有40px */
+			.box {
+				width: 300px;
+				height: 40px;
+				margin: 100px;
+			}
+			/* 大li要加浮动，水平排列，高度为40px，默认状况下只有显示菜单的a标签 */
+			.box>li {
+				float: left;
+				height: 40px;
+				/* overflow: hidden; */
+			}
+			/* 默认不显示，高度为0，要么给子ul加overflow，要么给大li标签加overflow */
+			.box>li>ul{
+				width: 100px;
+				height: 0px;
+				opacity: 0;
+				overflow: hidden;
+			}
+			/* 让小ul里的li默认显示在ul外面 */
+			.box>li>ul>li:nth-of-type(odd){
+				margin-left:-100px;
+			}
+			.box>li>ul>li:nth-of-type(even){
+				margin-left:100px;
+			}
+			
+			/* 鼠标移入时，大li的高度增加 */
+			.box>li:hover{
+				height: 160px;
+			}
+			/* 小li做平移过渡效果 */
+			.box>li:hover>ul>li{
+				margin-left: 0;
+				transition: margin-left 2s;
+			}
+			/* 让ul里的内容过渡地显示出来 */
+			.box>li:hover>ul{
+				height: 120px;
+				opacity: 1;
+				transition: opacity 2s;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="box">
+			<li>
+				<a href="#">菜单一</a>
+				<ul>
+					<li><a href="#">1-1</a></li>
+					<li><a href="#">1-2</a></li>
+					<li><a href="#">1-3</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">菜单二</a>
+				<ul>
+					<li><a href="#">2-1</a></li>
+					<li><a href="#">2-2</a></li>
+					<li><a href="#">2-3</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">菜单三</a>
+				<ul>
+					<li><a href="#">3-1</a></li>
+					<li><a href="#">3-2</a></li>
+					<li><a href="#">3-3</a></li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

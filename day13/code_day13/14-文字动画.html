@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				要点：
+				1、文字要设置不包裹，在一行内显示，white-space:nowrap;
+				2、我们要计算盒子的宽度和文字的大小的关系，要清楚将动画分成几步来执行。比如盒子是300px，字体是30px，那么steps(10)里的参数就是10。
+				3、动画执行结束以后要停留在最后的状态。
+				4、超出盒子范围内的内容隐藏掉。
+			 */
+			@keyframes type {
+				from {
+					width: 0;
+				}
+
+				to {
+					width: 300px;
+				}
+			}
+
+			.box {
+				overflow: hidden;
+				width: 0;
+				height: 30px;
+				font-size: 30px;
+				line-height: 30px;
+				white-space: nowrap;
+				background-color: #00FFFF;
+				animation: type 5s steps(8) 1s forwards;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">我在尚硅谷等你来撩！</div>
+	</body>
+</html>

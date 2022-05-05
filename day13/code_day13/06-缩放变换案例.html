@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				缩放只是显示效果的放大缩小，并不影响盒子本身的大小
+			 */
+			div {
+				width: 225px;
+				height: 137px;
+				margin: 50px;
+				overflow: hidden;
+			}
+			div>img{
+				width: 100%;
+				height: 100%;
+				transition: transform 100ms;
+			}
+			div>img:hover{
+				transform: scale(1.1);
+			}
+		</style>
+	</head>
+	<body>
+		<div><img src="images/scale.jpg" alt=""></div>
+	</body>
+</html>
