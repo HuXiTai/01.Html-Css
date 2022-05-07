@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				流式布局：两列，左侧导航栏宽度固定,用定位来实现，子绝父相
+			 */
+			html,body{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+			}
+			.box{
+				position: relative;
+				width: calc(100% - 160px);
+				height: 100%;
+				border: 1px solid red;
+				margin: 0 auto;
+			}
+			.left{
+				position: absolute;
+				width: 100px;
+				height: 100%;
+				background-color: antiquewhite;
+			}
+			.right{
+				position: absolute;
+				top: 0;
+				left: 100px;
+				width: calc(100% - 100px);
+				height: 100%;
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="left">导航栏</div>
+			<div class="right">内容区</div>
+		</div>
+	</body>
+</html>

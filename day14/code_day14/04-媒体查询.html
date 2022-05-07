@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				媒体类型为screen时，表示在有屏幕的设备上预览的效果 
+				媒体特征：用于对不同的媒体设备做区分，一般是屏幕的宽高、横竖屏
+			*/
+			@media screen and (max-width:800px) {
+				.text {
+					font-size: 30px;
+					background-color: #FAEBD7;
+				}
+			}
+
+			@media screen and (min-width:800px) {
+				.text {
+					font-size: 50px;
+					background-color:  red;
+				}
+			}
+			
+			/* 当媒体类型为print时，表示的是打印出来的样式，我们可以通过ctrl+P预览打印的效果 */
+			/* @media print {
+				.text{
+					font-size: 40px;
+					color: #00FFFF;
+				}
+			} */
+		</style>
+	</head>
+	<body>
+		<div class="text">暴涨！不少车主突然发现：我的车升值了！</div>
+	</body>
+</html>

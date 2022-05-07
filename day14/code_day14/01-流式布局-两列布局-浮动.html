@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				流式布局：三列，左侧导航栏宽度固定，用浮动来实现
+			 */
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+			}
+
+			.box {
+				width: calc(100% - 160px);
+				height: 100%;
+				border: 1px solid red;
+				margin: 0 auto;
+			}
+
+			.left,
+			.middle,
+			.right {
+				float: left;
+			}
+
+			.left {
+				width: 150px;
+				height: 100%;
+				background-color: antiquewhite;
+			}
+
+			.middle {
+				width: calc(80% - 150px);
+				height: 100%;
+				background-color: aqua;
+			}
+
+			.right {
+				width: 20%;
+				height: 100%;
+				background-color: cadetblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="left">左侧导航栏</div>
+			<div class="middle">内容区</div>
+			<div class="right">右侧导航栏</div>
+		</div>
+	</body>
+</html>

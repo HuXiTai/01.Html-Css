@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 向右走的动画 */
+			@keyframes right {
+				from {
+					background-image: url(images/pic/1.gif);
+					margin-left: 0;
+				}
+
+				to {
+					background-image: url(images/pic/1.gif);
+					margin-left: 453px;
+				}
+			}
+
+			/* 向下走的动画 */
+			@keyframes bottom {
+				from {
+					background-image: url(images/pic/2.gif);
+					margin-top: 0;
+				}
+
+				to {
+					background-image: url(images/pic/2.gif);
+					margin-top: 413px;
+				}
+			}
+
+			/* 向左走的动画 */
+			@keyframes left {
+				from {
+					background-image: url(images/pic/3.gif);
+					margin-left: 453px;
+				}
+
+				to {
+					background-image: url(images/pic/3.gif);
+					margin-left: 0;
+				}
+			}
+
+			/* 向上走的动画 */
+			@keyframes top {
+				from {
+					background-image: url(images/pic/4.gif);
+					margin-top: 413px;
+				}
+
+				/* 添加这个的目的是为了后面最后走上去之后有一个转身的效果 */
+				99% {
+					background-image: url(images/pic/4.gif);
+					margin-top: 2px;
+				}
+
+				to {
+					background-image: url(images/pic/0.gif);
+					margin-top: 0;
+				}
+			}
+
+			/* -------------------------------------------- */
+
+			.box {
+				width: 500px;
+				height: 500px;
+				border: 1px solid green;
+				margin: 50px auto;
+			}
+
+			.box>div {
+				width: 47px;
+				height: 87px;
+				background-image: url(images/pic/0.gif);
+				background-repeat: no-repeat;
+				/* 
+					我们可以对一个盒子设置多个动画，
+					多个动画之间用逗号分隔，同一时间只能执行一个动画，
+					其他的动画都设置了延迟执行，等上一个执行完了才执行下一个。
+				*/
+				animation: right 3s linear 2s forwards,
+					bottom 3s linear 5s forwards,
+					left 3s linear 8s forwards,
+					top 3s linear 11s forwards;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div></div>
+		</div>
+	</body>
+</html>

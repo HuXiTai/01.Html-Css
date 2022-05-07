@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			@keyframes right {
+				from {
+					margin-left: 0;
+					background-image: url(images/pic/1.gif);
+				}
+
+				to {
+					margin-left: 453px;
+				}
+			}
+
+			@keyframes down {
+				from {
+					margin-top: 0;
+					background-image: url(images/pic/2.gif);
+				}
+
+				to {
+					margin-top: 413px;
+					background-image: url(images/pic/2.gif);
+				}
+			}
+
+			@keyframes left {
+				from {
+					margin-left: 453px;
+					background-image: url(images/pic/3.gif);
+				}
+
+				to {
+					margin-left: 0;
+					background-image: url(images/pic/3.gif);
+				}
+			}
+
+			@keyframes up {
+				from {
+					margin-top: 413px;
+					background-image: url(images/pic/4.gif);
+				}
+
+				99.9% {
+					margin-top: 0;
+					background-image: url(images/pic/4.gif);
+				}
+
+				to {
+					margin-top: 0;
+					background-image: url(images/pic/0.gif);
+				}
+			}
+
+			.box {
+				width: 500px;
+				height: 500px;
+				border: 1px solid red;
+				margin: 50px auto;
+			}
+
+			.box>.boy {
+				width: 47px;
+				height: 87px;
+				background-image: url(images/pic/0.gif);
+				background-repeat: no-repeat;
+				animation: right 3s forwards, down 3s forwards 3s,
+					left 3s forwards 6s, up 3s forwards 9s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="boy"></div>
+		</div>
+	</body>
+</html>

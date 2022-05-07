@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				使用弹性布局，父盒子加display:flex
+				
+				子盒子的排列是按照主轴来进行排列的，和主轴垂直的叫侧轴。
+				flex布局里有两个轴，一个是主轴，一个是侧轴。
+				默认的x轴是主轴，如果希望y轴变成主轴，flex-direction设置为column
+				flex-direction:row/row-reverse/column/column-reverse。
+				
+				justify-content:设置主轴上的子元素排列方式
+				flex-start(整体从左往右排列)
+				flex-end(整体从右往左排列)
+				center(整体居中)
+				space-around(平分剩余空间，保证每个盒子左右外边距相同)
+				space-between(主轴上左右两个盒子靠边，中间的盒子之间间距相同)
+				space-evenly(主轴上任何两个盒子，以及盒子距边框的距离都相同)
+				
+				flex-wrap:设置是否换行，默认不换行，位置不够缩小每个盒子的宽度。
+				nowrap:不换行
+				wrap：换行
+				wrap-reverse:垂直轴反向换行
+				
+				align-items:设置只有一行盒子时，侧轴上子元素的排列方式
+				当x轴为主轴时：
+				flex-start:侧轴上在上面显示，在不设置子盒子高度的情况下，盒子高度由内容撑开
+				flex-end:侧轴上在下面显示
+				center：侧轴上在中间显示
+				stretch(默认值)：在不设置高度的情况下，子盒子高度撑满父容器
+				
+				align-content:设置侧轴有多行盒子时，侧轴上的排列方式
+				当x轴为主轴时：
+				flex-start:表示在父盒子顶部排列显示
+				flex-end:表示在父盒子底部排列显示
+				center：表示在父盒子中间排列显示
+				space-around:侧轴上子盒子的上下外边距相同
+				space-between:侧轴上，第一行在顶部，最后一行在底部，中间的平分侧轴上的剩余空间
+				space-evenly:侧轴上，盒子之间以及盒子距父盒子上下边框距离相同。
+				stretch:在子盒子不设置高度的情况下，高度撑满父盒子。
+			 */
+			.box{
+				display: flex;
+				/* flex-direction: row; */
+				justify-content: space-evenly;
+				flex-wrap: wrap;
+				/* align-items: flex-end; */
+				align-content:flex-start;
+				
+				/* flex-direction和flex-wrap的复合属性 */
+				/* flex-flow:column wrap; */
+				
+				width: 400px;
+				height: 400px;
+				border: 1px solid #00FFFF;
+			}
+			
+			.box>span{
+				width: 60px;
+				height: 40px;
+			}
+			.box>span:nth-child(odd){
+				background-color: #5F9EA0;
+			}
+			.box>span:nth-child(even){
+				background-color: burlywood;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+			<span>7</span>
+			<span>8</span>
+		</div>
+	</body>
+</html>
