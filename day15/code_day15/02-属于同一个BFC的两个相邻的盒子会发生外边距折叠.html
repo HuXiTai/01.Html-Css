@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				属于同一个BFC的两个相邻的margin会发生重叠
+				如果要解决这个问题,我们可以对其中的一个盒子外面再套一个盒子，让外面的盒子形成BFC，
+				这样相邻的两个盒子就不在同一个BFC里面相邻了，所以可以解决外边距折叠的问题。
+			 */
+			.box {
+				display: flow-root;
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+			}
+
+			.b1,
+			.b2 {
+				width: 70px;
+				height: 70px;
+			}
+
+			.b1 {
+				background-color: #00FFFF;
+				margin-bottom: 50px;
+			}
+
+			.b2 {
+				background-color: bisque;
+				margin-top: 50px;
+			}
+			.wrap{
+				display: flow-root;
+				/* overflow: hidden; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="wrap">
+				<div class="b1"></div>
+			</div>
+			<div class="b2"></div>
+		</div>
+	</body>
+</html>

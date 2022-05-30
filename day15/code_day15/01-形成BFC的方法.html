@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+				1、浮动可以形成BFC
+				2、绝对/固定定位可以形成BFC
+				3、display设置为inline-block/flex等等
+				4、overflow对块元素设置不是visible的值。
+				5、display设置为flow-root。
+			*/
+			span{
+				/* float:left; */
+				/* position: fixed; */
+				/* display: table-cell; */
+				display:flow-root;
+				width: 50px;
+				height: 50px;
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<span>span</span>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				BFC的区域不会与浮动的盒子重叠
+			 */
+			.box {
+				width: 400px;
+				height: 400px;
+				border: 1px solid red;
+			}
+
+			.box>img {
+				float: left;
+				width: 100px;
+			}
+			.box>div{
+				display: flow-root;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="./images/mv.jpg">
+			<div>
+				推免结果确定下来的一刹那，张所航一颗悬着的心也终于落了下来，
+				他与女友赵明玥都成功保研至浙江大学。
+				一路上的坎坷与起伏终于在九月末得到了令人满意的结果。
+				据悉，两人是来自山东大学（威海）机电与信息工程学院2018级机械制造及其自动化（中外合作）专业的学生，
+				男生张所航是机械合一班的班长，女生赵明玥是机械合二班的学委。两人的相识始于2018年，
+				缘分却是从今年天罡智能车实验室开始的。
+			</div>
+		</div>
+	</body>
+</html>

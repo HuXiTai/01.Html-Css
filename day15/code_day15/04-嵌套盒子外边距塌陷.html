@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				BFC是一个隔离的独立容器，里面的子元素不会影响到外面的元素
+				我们让外面的元素形成一个BFC，这样就可以解决外边距塌陷的问题。
+				overflow：hidden可以解决问题，但是会带来新的问题就是溢出盒子的部分会被隐藏掉。
+				所以display：flow-root才更适合，但是它有兼容性问题，低版本不支持。
+			 */
+			.big{
+				/* float:left; */
+				display:flow-root;
+				/* overflow: hidden; */
+				width: 400px;
+				height: 400px;
+				background-color: #FFE4C4;
+			}
+			.small{
+				width: 200px;
+				height: 200px;
+				background-color: #00FFFF;
+				margin-top: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="small"></div>
+			张所航曾获全国大学生智能汽车竞赛（四轮组别）国家一等奖、
+			全国大学生节能减排与社会实践科技作品竞赛国家一等奖以及各类省级奖项20余项，
+			还荣获研究创新一等奖学金、创业实践一等奖学金、社会服务二等奖学金等。
+			赵明玥曾获全国大学生智能汽车竞赛（百度创意组别）国家二等奖，
+			并以第一作者发表SCI论文一篇、普刊论文一篇，即将以第一作者发表SCI论文一篇，
+			还荣获山东大学学生创新创业活动先进个人、山东大学优秀学生干部、研究创新一等奖学金等。
+			两人共同参加全国大学生智能汽车竞赛（讯飞ROS组别），并取得了全国第三名的佳绩。
+		</div>
+		<div style="width: 200px;height: 500px;background-color: #FF0000;"></div>
+	</body>
+</html>
